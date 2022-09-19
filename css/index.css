@@ -1,0 +1,55 @@
+a {
+    font-size: calc(18px + 0.5vw);
+}
+
+/* Xsm & sm  */
+@media all and (max-width:767px) {
+
+    .segment-1 {
+        height: 75px;
+    }
+
+    .segment-1-logo {
+        font-size: x-large;
+    }
+
+    .segment-1-sidemenu {
+        list-style-type: none;
+        font-family: 'Merriweather', serif;
+        font-weight: 400;
+        font-style: italic;
+        text-transform: uppercase;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+
+    .segment-1-sidemenu li a:hover{
+        color: #887759 !important;
+        border-bottom: 1px solid white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
