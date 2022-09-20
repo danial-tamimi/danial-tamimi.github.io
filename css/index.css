@@ -2,9 +2,17 @@ a {
     font-size: calc(18px + 0.5vw);
 }
 
+.special-color {
+    color: #887759 !important;
+}
+
+/* font-family: 'Tiro Bangla', serif;
+font-family: 'Merriweather', serif; */
+
 /* Xsm & sm  */
 @media all and (max-width:767px) {
 
+    /* navigation start */
     .segment-1 {
         height: 75px;
     }
@@ -13,26 +21,82 @@ a {
         font-size: x-large;
     }
 
-    .segment-1-sidemenu {
-        list-style-type: none;
-        font-family: 'Merriweather', serif;
-        font-weight: 400;
-        font-style: italic;
-        text-transform: uppercase;
-        top: 0;
-        right: 0;
-        z-index: 2;
+    .segment-1-menu {
+        transition: all 250ms ease-in-out 0s;
     }
 
-
-    .segment-1-sidemenu li a:hover{
+    .segment-1-menu:hover {
         color: #887759 !important;
-        border-bottom: 1px solid white;
     }
 
+    /* navigation end */
+    /* part one start */
+    .part-1 {
+        background-image: url("../images/1.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+    }
 
+    .part-1-p1 {
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        font-size: large;
+    }
 
+    .part-1-p2 {
+        font-family: "Poppins", sans-serif;
+        text-transform: capitalize;
+        text-align: justify;
+    }
 
+    .part-1-h {
+        font-family: 'Tiro Bangla', serif;
+        font-style: italic;
+        font-size: 35px;
+    }
+
+    .part-1-icon{
+        transition: all 250ms ease-in-out 0s;
+    }
+
+    .part-1-icon:hover {
+        color: #887759 !important
+    }
+
+    /* part one end */
+    /* part two start */
+    .segment-2 {
+        background-image: url("../images/segment-2.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 950px;
+    }
+
+    .segment-2-h {
+        font-family: 'Tiro Bangla', serif;
+        font-size: 35px;
+    }
+
+    /* part two end */
+    /* part three start */
+    .segment-3 {
+        background-image: url("../images/segment-3.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .segment-3-h {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    .segment-3-border {
+        border-right: 3px solid #887759;
+        height: 30px;
+    }
 
 
 

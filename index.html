@@ -11,51 +11,112 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/71d7b6ae10.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
     <div class="container-fluid">
-        <div class="row bg-dark segment-1">
-            <div class="col-6 h-100 d-flex align-items-center"><a href="#" class="w-100 p-2"><img src="images/logo1.png"
-                        class="w-100" alt="logo" title="logo"></a></div>
+        <!-- navigation start -->
+        <div class="row bg-dark segment-1 sticky-top">
+            <div class="col-6 h-100 d-flex align-items-center"><a href="#" class="p-2" class="w-100 p-2"><img
+                        src="images/logo1.png" class="w-100" alt="logo" title="logo"></a></div>
             <div class="col-6 h-100 d-flex align-items-center justify-content-end pe-3 segment-1-logo"><a href="#"
-                    class="p-2"><i class="fa-solid fa-bars text-white"></i>
-                    <div class="d-none">
-                    <ul class=" bg-dark bg-opacity-50 position-absolute w-50 h-100 d-flex flex-column justify-content-around align-items-center ps-0 segment-1-sidemenu">
-                        <li class="w-75 text-center pe-2">
-                            <a href="#" class="text-decoration-none link-light w-100 p-2">home</a>
-                        </li>
-                        <li class="w-75 text-center pe-2">
-                            <a href="#" class="text-decoration-none link-light w-100 p-2">about me</a>
-                        </li>
-                        <li class="w-75 text-center pe-2">
-                            <a href="#" class="text-decoration-none link-light w-100 p-2">Education & Bar Adminssion</a>
-                        </li>
-                        <li class="w-75 text-center pe-2">
-                            <a href="#" class="text-decoration-none link-light w-100 p-2">Testimonial</a>
-                        </li>
-                        <li class="w-75 text-center pe-2">
-                            <a href="#" class="text-decoration-none link-light w-100 p-2">case study</a>
-                        </li>
-                        <li class="w-75 text-center pe-2">
-                            <a href="#" class="text-decoration-none link-light w-100 p-2">contact</a>
-                        </li>
-                    </ul>
-                    </div>
-                </a></div>
+                    class="p-2"><i class="fa-solid fa-bars text-white segment-1-menu"></i></a>
+            </div>
         </div>
-        <div class="row">
-            <div class="col"></div>
+        <!-- navigation end -->
+        <!-- part one start -->
+        <div class="row d-flex flex-column align-items-center justify-content-evenly part-1">
+            <div class="col-12 w-75 d-flex align-items-center justify-content-center">
+                <p class="pt-2 part-1-p1 special-color">Your Attorney</p>
+            </div>
+            <div class="col-12 w-75 d-flex align-items-center justify-content-center">
+                <h3 class="text-white part-1-h">Paul Goodman</h3>
+            </div>
+            <div class="col-12 w-75 d-flex align-items-center justify-content-center">
+                <p class="part-1-p2 text-light text-opacity-50">A wonderful serenity has taken possession of my entire
+                    soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel
+                    the charm of existence in this spot, which was created for the bliss of souls like mine. I am so
+                    happy, my dear friend.</p>
+            </div>
+            <div class="col-12 w-75 d-flex align-items-center justify-content-center"><img src="images/sign.png"
+                    alt="paulgoodman" title="paul goodman"></div>
+            <div class="col-12 w-75 d-flex align-items-center justify-content-evenly">
+                <a href="#" class="p-2"><i class="fa-brands fa-facebook text-light opacity-75 part-1-icon"></i></a>
+                <a href="#" class="p-2"><i class="fa-brands fa-linkedin-in text-light opacity-75 part-1-icon"></i></a>
+                <a href="#" class="p-2"><i class="fa-brands fa-pinterest text-light opacity-75 part-1-icon"></i></a>
+                <a href="#" class="p-2"><i class="fa-brands fa-twitter text-light opacity-75 part-1-icon"></i></a>
+                <a href="#" class="p-2"><i class="fa-brands fa-instagram text-light opacity-75 part-1-icon"></i></a>
+            </div>
         </div>
-    </div>
+        <!-- part one end -->
+        <!-- part two start -->
+        <div class="row d-flex flex-column flex-wrap align-items-center justify-content-evenly segment-2">
+            <div class="col-12 w-75">
+                <h3 class="text-white border-bottom w-75 border-4 border-light border-opacity-75 rounded-3 segment-2-h">
+                    Pratice Area</h3>
+            </div>
+            <div class="col-12 w-75">
+                <img src="images/segment-2-money.png" class="float-start pe-4" alt="money" title="money">
+                <p class="h3 text-light pb-3">Coporate & Securities</p>
+                <p class="text-light text-opacity-75">Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind. One morning, when Gregor Samsa woke from troubled.
+                </p>
+            </div>
+            <div class="col-12 w-75">
+                <img src="images/segment-2-insurance.png" class="float-start pe-4" alt="insurance" title="insurance">
+                <p class="h3 text-light pb-3 pt-2">Real Estate Law</p>
+                <p class="text-light text-opacity-75">Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind. One morning, when Gregor Samsa woke from troubled.
+                </p>
+            </div>
+            <div class="col-12 w-75">
+                <img src="images/segment-2-safe.png" class="float-start pe-4" alt="safe" title="safe">
+                <p class="h3 text-light pb-4 pt-2">Insurance Law</p>
+                <p class="text-light text-opacity-75">Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind. One morning, when Gregor Samsa woke from troubled.
+                </p>
+            </div>
+        </div>
+            <!-- part two end -->
+            <!-- part three start -->
+            <div class="row segment-3">
+                <div class="col-12 border d-flex align-items-center justify-content-center">
+                    <p class="border part-1-p1 special-color">what we are expert at</p>
+                </div>
+                <div class="col-12 border d-flex align-items-center justify-content-center">
+                    <h3 class="border text-light w-50 segment-3-h">Why Clients Choose Us?</h3>
+                </div>
+                <div class="col-6 segment-3-border"></div>
+                <div class="col-6"></div>
+                <div class="col-12 border d-flex align-items-center justify-content-center">
+                    <p class="border text-light w-100 px-4 text-opacity-75">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in Bookm arksgrove right at the coast of the
+                        Semantics, a large language ocean. A small river named</p>
+                </div>
+                <div class="col-12 border d-flex align-items-center justify-content-center">
+                    <p class="border text-light w-100 px-4 text-opacity-75">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                        which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot,
+                        which was created for the bliss of souls like mine.</p>
+                </div>
+                <div class="col-12 border d-flex justify-content-center align-items-center"><p class="border text-light">1000 +</p></div>
+                <div class="col-12 border d-flex justify-content-center align-items-center"><p class="border special-color">Client Consultations</p></div>
+                <div class="col-12 border d-flex justify-content-center align-items-center"><p class="border text-light">95%</p></div>
+                <div class="col-12 border d-flex justify-content-center align-items-center"><p class="border special-color">Successful Cases</p></div>
+                <div class="col-12 border d-flex justify-content-center align-items-center"><p class="border text-light">10mIns</p></div>
+                <div class="col-12 border d-flex justify-content-center align-items-center"><p class="border special-color">Recovered cost for clients</p></div>
+                <div class="col-12 border d-flex justify-content-center align-items-center"><p class="border text-light">30+</p></div>
+                <div class="col-12 border d-flex justify-content-center align-items-center"><p class="border special-color">Professional Attorneys</p></div>
+            </div>
+        </div>
+
 
 </body>
 
