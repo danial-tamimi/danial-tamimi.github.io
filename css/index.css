@@ -3,7 +3,7 @@ a {
 }
 
 .special-color {
-    color: #887759 !important;
+    color: rgb(177, 150, 106) !important;
 }
 
 /* font-family: 'Tiro Bangla', serif;
@@ -84,6 +84,7 @@ font-family: 'Merriweather', serif; */
         background-image: url("../images/segment-3.jpg");
         background-position: center;
         background-size: cover;
+        height: 1500px;
     }
 
     .segment-3-h {
@@ -98,10 +99,32 @@ font-family: 'Merriweather', serif; */
         height: 30px;
     }
 
+    .segment-3-p{
+        font-family: "Playfair Display", serif;
+        font-size: xx-large;
+        font-weight: 700;
+    }
 
+    .segment-3-p2{
+        font-size: large;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+    }
+/* part three end */
+/* part four start */
+.segment-4{
+    height: 750px;
+}
 
+.segment-4-p1{
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: xx-large;
+}
 
-
+.segment-4-icon{
+    font-size: xx-large;
+}
 
 
 
