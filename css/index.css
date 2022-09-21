@@ -125,10 +125,32 @@ font-family: 'Merriweather', serif; */
 .segment-4-icon{
     font-size: xx-large;
 }
+/* part four end */
+/* part five start */
+.segment-5{
+    background-image: url("../images/segment-5.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
 
+.segment-5-p1{
+    font-family:"Playfair Display", serif;
+    font-size: xx-large;
+    font-weight: 700;  
+    font-style: italic;  
+}
 
-
-
+.segment-5-p2{
+    font-weight: bold;
+}
+/* part five end */
+/* part six start */
+.segment-6{
+    background-image: url("../images/segment-6.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 
 
