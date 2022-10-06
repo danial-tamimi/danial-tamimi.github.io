@@ -6,6 +6,10 @@ a {
     color: rgb(177, 150, 106) !important;
 }
 
+.special-font {
+    font-family: "Playfair Display", serif;
+}
+
 /* font-family: 'Tiro Bangla', serif;
 font-family: 'Merriweather', serif; */
 
@@ -163,7 +167,7 @@ font-family: 'Merriweather', serif; */
         opacity: 0;
     }
 
-    .segment-6-logo{
+    .segment-6-logo {
         font-size: x-large;
     }
 
@@ -211,7 +215,7 @@ font-family: 'Merriweather', serif; */
         cursor: pointer;
         border: 2px solid #887759;
     }
-    
+
     .segment-6-button:hover {
         border-radius: 6px;
     }
@@ -231,7 +235,7 @@ font-family: 'Merriweather', serif; */
         background-color: white;
         transition: all 400ms ease-in-out 0s;
     }
-    
+
     .segment-6-button:hover::before {
         transform: scaleX(1);
         border-radius: 6px;
@@ -241,18 +245,58 @@ font-family: 'Merriweather', serif; */
         transition: all 400ms ease-in-out 0s;
         color: white;
         z-index: 1;
+        font-size: small;
     }
 
     .segment-6-button:hover .segment-6-button-a {
         color: #887759;
     }
-/* part six end */
 
+    /* part six end */
+    /* part seven start */
+    .segment-7 {
+        background-image: url("../images/segment-7.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+    }
 
+    .segment-7-semicolom {
+        font-size: 55px;
+    }
 
+    .segment-7-slider {
+        list-style-type: circle;
+        border: transparent !important;
+    }
 
+    /* part seven end */
+    /* part eight start */
+    .segment-8 {
+        height: 980px;
+    }
 
+    #segment-8-a {
+        font-size: large !important;
+    }
 
+    /* part eight end  */
+    /* part nine start */
+    .segment-9-textarea {
+        resize: none;
+    }
+
+    .segment-9-div-textarea{
+        height: 200px !important;
+    }
+
+    .segment-9-form{
+        height: 480px;
+    }
+
+    .segment-9{
+        height: 1000px;
+    }
 
 
 
