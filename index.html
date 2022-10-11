@@ -25,10 +25,41 @@
     <div class="container-fluid">
         <!-- navigation start -->
         <div class="row bg-dark segment-1 sticky-top">
-            <div class="col-6 h-100 d-flex align-items-center"><a href="#" class="p-2" class="w-100 p-2"><img
-                        src="images/logo1.png" class="w-100" alt="logo" title="logo"></a></div>
-            <div class="col-6 h-100 d-flex align-items-center justify-content-end pe-3 segment-1-logo"><a href="#"
-                    class="p-2"><i class="fa-solid fa-bars text-white segment-1-menu"></i></a>
+            <div class="col-12 px-0">
+                <nav class="navbar navbar-expand-xl bg-dark navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand segment-1-logo" href="#"><img src="images/logo1.png" alt="logo" title="good layer" class="img-fluid"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-xl-between" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto text-center mb-2 mb-xl-0 text-uppercase fs-5 w-100 d-xl-flex flex-xl-nowrap justify-content-xl-evenly align-items-xl-center special-font">
+                                <li class="nav-item segment-1-border segment-1-h">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item segment-1-border segment-1-h">
+                                    <a class="nav-link" href="#">about me</a>
+                                </li>
+                                <li class="nav-item dropdown segment-1-border segment-1-h">
+                                    <a class="nav-link" href="#">
+                                        Education & Bar Adminssion
+                                    </a>
+                                </li>
+                                <li class="nav-item segment-1-border segment-1-h">
+                                    <a class="nav-link" href="#">Testimonial</a>
+                                </li>
+                                <li class="nav-item segment-1-border segment-1-h">
+                                    <a class="nav-link" href="#">Case Study</a>
+                                </li>
+                                <li class="nav-item segment-1-border segment-1-h">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
         <!-- navigation end -->
@@ -360,8 +391,8 @@
                 class="col-12 w-75 d-flex flex-column flex-wrap align-items-center justify-content-evenly segment-9-form">
                 <form action="#" method="post" class="w-100 h-100 d-flex flex-column flex-wrap justify-content-around">
                     <div class="form-floating">
-                        <input type="text" class="form-control bg-dark bg-opacity-10 shadow-sm" placeholder="for example: ted"
-                            id="name" name="name_customer" required>
+                        <input type="text" class="form-control bg-dark bg-opacity-10 shadow-sm"
+                            placeholder="for example: ted" id="name" name="name_customer" required>
                         <label for="name" class="text-capitalize text-dark text-opacity-50">name*</label>
                     </div>
                     <div class="form-floating">
@@ -378,8 +409,8 @@
                         <label for="law" class="text-capitalize text-dark text-opacity-50">your issue</label>
                     </div>
                     <div class="form-floating">
-                        <input type="email" class="form-control bg-dark bg-opacity-10 shadow-sm" name="email_customer" id="email"
-                            placeholder="for example:example@gmail.com" required>
+                        <input type="email" class="form-control bg-dark bg-opacity-10 shadow-sm" name="email_customer"
+                            id="email" placeholder="for example:example@gmail.com" required>
                         <label for="email" class="text-capitalize text-dark text-opacity-50">email*</label>
                     </div>
                     <div class="form-floating segment-9-div-textarea">
