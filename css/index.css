@@ -10,7 +10,7 @@ a {
     font-family: "Playfair Display", serif;
 }
 
-.special-transition{
+.special-transition {
     transition: all 300ms ease-in-out 0s;
 }
 
@@ -37,26 +37,37 @@ a {
     transform: scaleX(1);
 }
 
-.segment-1-logo{
+.segment-1-logo {
     width: 20%;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
+.part-1-icon {
+    transition: all 250ms ease-in-out 0s;
+}
+
+.part-1-icon:hover {
+    color: #887759 !important;
+}
 
 /* font-family: 'Tiro Bangla', serif;
 font-family: 'Merriweather', serif; */
 
 /* Xsm & sm  */
-@media all and (max-width:767px) {
+@media all and (max-width:767.5px) {
 
     /* navigation start */
-    .segment-1-logo{
+    .segment-1-logo {
         width: 50%;
     }
 
     .segment-1-border {
         position: relative;
     }
-    
+
     .segment-1-border::after {
         content: "";
         display: block;
@@ -72,11 +83,11 @@ font-family: 'Merriweather', serif; */
         transform-origin: left;
     }
 
-    .segment-1-menu:hover i{
+    .segment-1-menu:hover i {
         color: #887759;
     }
 
-    .segment-1-menu:hover{
+    .segment-1-menu:hover {
         color: #887759 !important;
     }
 
@@ -90,33 +101,7 @@ font-family: 'Merriweather', serif; */
         background-image: url("../images/1.jpg");
         background-position: center;
         background-size: cover;
-        height: 550px;
-    }
-
-    .part-1-p1 {
-        font-family: "Poppins", sans-serif;
-        text-transform: uppercase;
-        font-size: large;
-    }
-
-    .part-1-p2 {
-        font-family: "Poppins", sans-serif;
-        text-transform: capitalize;
-        text-align: justify;
-    }
-
-    .part-1-h {
-        font-family: 'Tiro Bangla', serif;
-        font-style: italic;
-        font-size: 35px;
-    }
-
-    .part-1-icon {
-        transition: all 250ms ease-in-out 0s;
-    }
-
-    .part-1-icon:hover {
-        color: #887759 !important;
+        height: 820px;
     }
 
     /* part one end */
@@ -128,11 +113,6 @@ font-family: 'Merriweather', serif; */
         height: 950px;
     }
 
-    .segment-2-h {
-        font-family: 'Tiro Bangla', serif;
-        font-size: 35px;
-    }
-
     /* part two end */
     /* part three start */
     .segment-3 {
@@ -142,28 +122,9 @@ font-family: 'Merriweather', serif; */
         height: 1500px;
     }
 
-    .segment-3-h {
-        font-family: "Playfair Display", serif;
-        font-size: 35px;
-        font-weight: 700;
-        text-transform: capitalize;
-    }
-
     .segment-3-border {
         border-right: 3px solid #887759;
         height: 30px;
-    }
-
-    .segment-3-p {
-        font-family: "Playfair Display", serif;
-        font-size: xx-large;
-        font-weight: 700;
-    }
-
-    .segment-3-p2 {
-        font-size: 15px;
-        font-family: "Poppins", sans-serif;
-        text-transform: uppercase;
     }
 
     /* part three end */
@@ -172,34 +133,13 @@ font-family: 'Merriweather', serif; */
         height: 750px;
     }
 
-    .segment-4-p1 {
-        font-family: "Playfair Display", serif;
-        font-weight: 700;
-        font-size: xx-large;
-    }
-
-    .segment-4-icon {
-        font-size: xx-large;
-    }
-
     /* part four end */
     /* part five start */
     .segment-5 {
         background-image: url("../images/segment-5.jpg");
         background-position: center;
         background-size: cover;
-        height: 800px;
-    }
-
-    .segment-5-p1 {
-        font-family: "Playfair Display", serif;
-        font-size: xx-large;
-        font-weight: 700;
-        font-style: italic;
-    }
-
-    .segment-5-p2 {
-        font-weight: bold;
+        height: 812px;
     }
 
     /* part five end */
@@ -217,49 +157,21 @@ font-family: 'Merriweather', serif; */
         opacity: 0;
     }
 
-    .segment-6-logo {
-        font-size: x-large;
-    }
-
-    .segment-6-divmother {
-        font-family: 'Merriweather', serif;
-    }
-
     .segment-6-divson:hover .segment-6-div {
         opacity: 1;
     }
 
-    .segment-6-div {
-        transition: all 400ms ease-in-out 0s;
-
-    }
-
     .segment-6-divson {
-        transition: all 400ms ease-in-out 0s;
         cursor: pointer;
-    }
-
-    .segment-6-image-hover {
-        transition: all 400ms ease-in-out 0s;
-
     }
 
     .segment-6-divson:hover img {
         transform: scale(1.05);
     }
 
-    .segment-6-image-a {
-        font-size: medium;
-    }
-
-    .segment-6-image-icon {
-        font-size: x-large;
-    }
-
     .segment-6-button {
         background-color: #887759;
         height: 50px;
-        transition: all 400ms ease-in-out 0s;
         cursor: pointer;
         border: 2px solid #887759;
     }
@@ -290,7 +202,6 @@ font-family: 'Merriweather', serif; */
     }
 
     .segment-6-button-a {
-        transition: all 400ms ease-in-out 0s;
         color: white;
         z-index: 1;
         font-size: small;
@@ -308,11 +219,11 @@ font-family: 'Merriweather', serif; */
         background-position: center;
     }
 
-    .segment-7-carousel{
+    .segment-7-carousel {
         height: 500px;
     }
 
-    .segment-7-carousel-image{
+    .segment-7-carousel-image {
         width: 70px;
     }
 
@@ -344,6 +255,11 @@ font-family: 'Merriweather', serif; */
         height: 1000px;
     }
 
+    /* part nine end */
+    /* part ten start */
+    .segment-10-footer:hover {
+        color: white !important;
+    }
 
 
 }
