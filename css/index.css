@@ -14,6 +14,164 @@ a {
     transition: all 300ms ease-in-out 0s;
 }
 
+.segment-subimage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* repeat code */
+/* part one */
+.part-1 {
+    background-image: url("../images/1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 820px;
+}
+
+/* part two */
+.segment-2 {
+    background-image: url("../images/segment-2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 950px;
+}
+
+/* part three */
+.segment-3 {
+    background-image: url("../images/segment-3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.segment-3-border {
+    border-right: 3px solid #887759;
+    height: 30px;
+}
+
+/* part four */
+.segment-4 {
+    height: 750px;
+}
+
+/* part five */
+.segment-5 {
+    background-image: url("../images/segment-5.jpg");
+    height: 812px;
+}
+
+/* part six */
+.segment-6 {
+    background-image: url("../images/segment-6.jpg");
+}
+
+.segment-6-div {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.segment-6-divson:hover .segment-6-div {
+    opacity: 1;
+}
+
+.segment-6-divson {
+    cursor: pointer;
+}
+
+.segment-6-divson:hover img {
+    transform: scale(1.05);
+}
+
+.segment-6-button {
+    background-color: #887759;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid #887759;
+}
+
+.segment-6-button:hover {
+    border-radius: 6px;
+}
+
+.segment-6-button::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: white;
+    transition: all 400ms ease-in-out 0s;
+}
+
+.segment-6-button:hover::before {
+    transform: scaleX(1);
+    border-radius: 6px;
+}
+
+.segment-6-button-a {
+    color: white;
+    z-index: 1;
+    font-size: small;
+}
+
+.segment-6-button:hover .segment-6-button-a {
+    color: #887759;
+}
+
+.segment-1-menu:hover i {
+    color: #887759;
+}
+
+.segment-1-menu:hover {
+    color: #887759 !important;
+}
+/* part seven */
+
+.segment-7 {
+    background-image: url("../images/segment-7.jpg");
+}
+
+.segment-7-carousel {
+    height: 500px;
+}
+
+.segment-7-carousel-image {
+    width: 70px;
+}
+/* part eight */
+.segment-8 {
+    height: 980px;
+}
+
+#segment-8-a {
+    font-size: large !important;
+}
+/* part nine */
+.segment-9-textarea {
+    resize: none;
+}
+
+.segment-9-div-textarea {
+    height: 200px !important;
+}
+
+.segment-9-form {
+    height: 480px;
+}
+
+.segment-9 {
+    height: 1000px;
+}
+/* navigation */
+
 .segment-1-border {
     position: relative;
 }
@@ -56,7 +214,7 @@ a {
 /* font-family: 'Tiro Bangla', serif;
 font-family: 'Merriweather', serif; */
 
-/* Xsm & sm  */
+/* xs & sm  */
 @media all and (max-width:767.5px) {
 
     /* navigation start */
@@ -96,170 +254,59 @@ font-family: 'Merriweather', serif; */
     }
 
     /* navigation end */
-    /* part one start */
-    .part-1 {
-        background-image: url("../images/1.jpg");
-        background-position: center;
-        background-size: cover;
-        height: 820px;
-    }
-
-    /* part one end */
-    /* part two start */
-    .segment-2 {
-        background-image: url("../images/segment-2.jpg");
-        background-position: center;
-        background-size: cover;
-        height: 950px;
-    }
-
-    /* part two end */
     /* part three start */
-    .segment-3 {
-        background-image: url("../images/segment-3.jpg");
-        background-position: center;
-        background-size: cover;
-        height: 1500px;
-    }
-
-    .segment-3-border {
-        border-right: 3px solid #887759;
-        height: 30px;
+    .segment-3-size {
+        height: 1300px;
     }
 
     /* part three end */
-    /* part four start */
-    .segment-4 {
-        height: 750px;
-    }
-
-    /* part four end */
-    /* part five start */
-    .segment-5 {
-        background-image: url("../images/segment-5.jpg");
-        background-position: center;
-        background-size: cover;
-        height: 812px;
-    }
-
-    /* part five end */
     /* part six start */
-    .segment-6 {
-        background-image: url("../images/segment-6.jpg");
-        background-position: center;
-        background-size: cover;
+    .segment-6-sm-w{
+        width: 75%;
     }
-
-    .segment-6-div {
-        z-index: 1;
-        top: 0;
-        left: 0;
-        opacity: 0;
+    .segment-6-margin{
+        margin-bottom: 45px;
     }
-
-    .segment-6-divson:hover .segment-6-div {
-        opacity: 1;
-    }
-
-    .segment-6-divson {
-        cursor: pointer;
-    }
-
-    .segment-6-divson:hover img {
-        transform: scale(1.05);
-    }
-
-    .segment-6-button {
-        background-color: #887759;
-        height: 50px;
-        cursor: pointer;
-        border: 2px solid #887759;
-    }
-
-    .segment-6-button:hover {
-        border-radius: 6px;
-    }
-
-    .segment-6-button::before {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        transform: scaleX(0);
-        transform-origin: left;
-        background-color: white;
-        transition: all 400ms ease-in-out 0s;
-    }
-
-    .segment-6-button:hover::before {
-        transform: scaleX(1);
-        border-radius: 6px;
-    }
-
-    .segment-6-button-a {
-        color: white;
-        z-index: 1;
-        font-size: small;
-    }
-
-    .segment-6-button:hover .segment-6-button-a {
-        color: #887759;
-    }
-
-    /* part six end */
-    /* part seven start */
-    .segment-7 {
-        background-image: url("../images/segment-7.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    .segment-7-carousel {
-        height: 500px;
-    }
-
-    .segment-7-carousel-image {
-        width: 70px;
-    }
-
-    /* part seven end */
-    /* part eight start */
-    .segment-8 {
-        height: 980px;
-    }
-
-    #segment-8-a {
-        font-size: large !important;
-    }
-
-    /* part eight end  */
+    /* part  six end */
     /* part nine start */
-    .segment-9-textarea {
-        resize: none;
-    }
-
-    .segment-9-div-textarea {
-        height: 200px !important;
-    }
-
-    .segment-9-form {
-        height: 480px;
-    }
-
-    .segment-9 {
-        height: 1000px;
-    }
 
     /* part nine end */
     /* part ten start */
     .segment-10-footer:hover {
         color: white !important;
     }
+}
 
+@media all and (min-width:768px) and (max-width:1199.5px) {
 
+    /* part one */
+    .segment-1-subimage {
+        background-image: url("../images/segment-1-subimage.jpg");
+    }
+
+    /* part two */
+
+    .segment-2-subimage {
+        background-image: url("../images/segment-2-subimage.jpg");
+    }
+
+    /* part three */
+
+    .segment-3-size-md {
+        height: 1000px;
+    }
+
+    /* part four */
+    .segment-4-subimage {
+        background-image: url("../images/segment-4-subimage.jpg");
+    }
+
+    /* part five */
+    .segment-5-subimage {
+        background-image: url("../images/segment-5-subimage.jpg");
+    }
+    /* partsix */
+    .segment-6-md-w{
+        width: 30%;
+    }
 }
