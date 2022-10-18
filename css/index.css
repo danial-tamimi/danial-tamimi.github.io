@@ -2,6 +2,10 @@ a {
     font-size: calc(18px + 0.5vw);
 }
 
+p {
+    font-size: calc(13px + 0.5vw);
+}
+
 .special-color {
     color: rgb(177, 150, 106) !important;
 }
@@ -20,7 +24,65 @@ a {
     background-size: cover;
 }
 
+body {
+    animation: represent 500ms ease-in-out 0;
+}
+
+@keyframes represent {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.test{
+    background-image: url("../images/segment-collapse.jpg");
+}
+
 /* repeat code */
+/* navigation */
+.segment-1-border {
+    position: relative;
+}
+
+.segment-1-border::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    transition: all 500ms ease-in-out 0s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.segment-1-border:hover::after {
+    transform: scaleX(1);
+}
+
+.segment-1-logo {
+    width: 20%;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.part-1-icon {
+    transition: all 250ms ease-in-out 0s;
+}
+
+.part-1-icon:hover {
+    color: #887759 !important;
+}
+
 /* part one */
 .part-1 {
     background-image: url("../images/1.jpg");
@@ -133,6 +195,7 @@ a {
 .segment-1-menu:hover {
     color: #887759 !important;
 }
+
 /* part seven */
 
 .segment-7 {
@@ -146,6 +209,7 @@ a {
 .segment-7-carousel-image {
     width: 70px;
 }
+
 /* part eight */
 .segment-8 {
     height: 980px;
@@ -154,6 +218,7 @@ a {
 #segment-8-a {
     font-size: large !important;
 }
+
 /* part nine */
 .segment-9-textarea {
     resize: none;
@@ -170,51 +235,12 @@ a {
 .segment-9 {
     height: 1000px;
 }
-/* navigation */
 
-.segment-1-border {
-    position: relative;
+/* part ten */
+.segment-10-footer:hover {
+    color: white !important;
 }
 
-.segment-1-border::after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-bottom: 1px solid rgb(220, 220, 220);
-    transition: all 500ms ease-in-out 0s;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.segment-1-border:hover::after {
-    transform: scaleX(1);
-}
-
-.segment-1-logo {
-    width: 20%;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.part-1-icon {
-    transition: all 250ms ease-in-out 0s;
-}
-
-.part-1-icon:hover {
-    color: #887759 !important;
-}
-
-/* font-family: 'Tiro Bangla', serif;
-font-family: 'Merriweather', serif; */
-
-/* xs & sm  */
 @media all and (max-width:767.5px) {
 
     /* navigation start */
@@ -261,23 +287,22 @@ font-family: 'Merriweather', serif; */
 
     /* part three end */
     /* part six start */
-    .segment-6-sm-w{
+    .segment-6-sm-w {
         width: 75%;
     }
-    .segment-6-margin{
+
+    .segment-6-margin {
         margin-bottom: 45px;
     }
-    /* part  six end */
-    /* part nine start */
 
-    /* part nine end */
+    /* part  six end */
     /* part ten start */
-    .segment-10-footer:hover {
-        color: white !important;
+    .segment-10-sm-ms {
+        margin-left: 25px;
     }
 }
 
-@media all and (min-width:768px) and (max-width:1199.5px) {
+@media all and (min-width:768px) {
 
     /* part one */
     .segment-1-subimage {
@@ -305,8 +330,35 @@ font-family: 'Merriweather', serif; */
     .segment-5-subimage {
         background-image: url("../images/segment-5-subimage.jpg");
     }
+
     /* partsix */
-    .segment-6-md-w{
+    .segment-6-md-w {
         width: 30%;
     }
+
+    /* part ten */
+    .segment-10-md-firstdiv {
+        width: 20%;
+    }
+
+    .segment-10-md-subdivfirst {
+        width: 25%;
+    }
+
+    .segment-10-md-ms {
+        margin-left: 15px;
+    }
+
+    .segment-10-md-image {
+        width: 85% !important;
+    }
+
+    .segment-10-md-subdivfs {
+        font-size: 20px !important;
+    }
+
+    .segment-10-md-subdivsecond {
+        width: 50%;
+    }
+
 }
