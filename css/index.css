@@ -1,3 +1,17 @@
+body {
+    animation: represent 2s ease-in-out 0;
+}
+
+@keyframes represent {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 a {
     font-size: calc(18px + 0.5vw);
 }
@@ -22,24 +36,6 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-body {
-    animation: represent 500ms ease-in-out 0;
-}
-
-@keyframes represent {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.test{
-    background-image: url("../images/segment-collapse.jpg");
 }
 
 /* repeat code */
@@ -210,6 +206,11 @@ body {
     width: 70px;
 }
 
+/* part collapse */
+.part_frequentlyQ {
+    background-image: url("../images/segment-collapse.jpg");
+}
+
 /* part eight */
 .segment-8 {
     height: 980px;
@@ -296,6 +297,12 @@ body {
     }
 
     /* part  six end */
+    /* part collapse */
+    .segment-fq-sm-m {
+        margin-bottom: 45px;
+        width: 80% !important;
+    }
+
     /* part ten start */
     .segment-10-sm-ms {
         margin-left: 25px;
@@ -336,6 +343,23 @@ body {
         width: 30%;
     }
 
+    /* part collapse */
+    .part-fq-md-w {
+        width: 30% !important;
+    }
+
+    .part-fq-md-p {
+        padding-top: 40px;
+    }
+
+    .part-fq-md-p4 {
+        margin-top: 50px;
+    }
+
+    .part-fq-md-wmother {
+        width: 92% !important;
+    }
+
     /* part ten */
     .segment-10-md-firstdiv {
         width: 20%;
@@ -360,5 +384,4 @@ body {
     .segment-10-md-subdivsecond {
         width: 50%;
     }
-
 }
