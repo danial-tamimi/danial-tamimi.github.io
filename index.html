@@ -29,8 +29,8 @@
 <body>
     <div class="container-fluid height-100 nav-bg">
         <!-- Start Navigation -->
-        <div class="row">
-            <div class="col-12 d-flex justify-content-between special-color h-5">
+        <div class="row h-10">
+            <div class="col-12 d-flex justify-content-between special-color">
                 <div class="w-60 d-flex align-items-center">
                     <a href="#"
                         class="d-flex align-items-center ps-3 text-decoration-none link-light fs-2 fw-bold fs-hspecial">Stanford
@@ -43,15 +43,15 @@
                         <span>Search</span>
                     </button>
                     <button
-                        class="d-flex justify-content-center fs-5 p-2 me-3 border-0 bg-transparent text-white ms-4 text-center hover-nav special-transition">
-                        <i class="bi fw-bolder fs-4 me-2 bi-list"></i>
-                        <i class="bi fw-bolder me-2 bi-x-lg d-none"></i>
-                        <span>Menu</span>
+                        class="d-flex justify-content-center fs-5 p-2 me-3 border-0 bg-transparent text-white ms-4 text-center hover-nav special-transition openmenu">
+                        <i class="bi fw-bolder fs-4 me-2 bi-list menuicon"></i>
+                        <i class="bi fw-bolder me-2 fs-4 bi-x-lg d-none closeicon"></i>
+                        <span class="menu">Menu</span>
                     </button>
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center h-0 submenu-transition submenu1">
             <!-- Top section of Submenu Start -->
             <div
                 class="col-6 bg-white border d-flex p-0 justify-content-center align-items-center hover-submenutop special-transition">
@@ -96,20 +96,22 @@
             <!-- Top section of Submenu End-->
             <div class="col-12 bg-submenu text-center pt-4 pb-3 fs-hspecial">Information for:</div>
             <div class="col-12 bg-submenu d-flex justify-content-around flex-wrap">
-                <a href="#" class="text-decoration-none text-black fs-6 m-2">students</a>
-                <a href="#" class="text-decoration-none text-black fs-6 m-2">faculty & staff</a>
-                <a href="#" class="text-decoration-none text-black fs-6 m-2">families</a>
-                <a href="#" class="text-decoration-none text-black fs-6 m-2">visitors</a>
-                <a href="#" class="text-decoration-none text-black fs-6 m-2">alumni</a>
+                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">students</a>
+                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">faculty & staff</a>
+                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">families</a>
+                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">visitors</a>
+                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">alumni</a>
             </div>
-            <div class="col-12 bg-submenu"><button>covid-19</button></div>
+            <div class="col-12 d-flex justify-content-center align-items-center py-3 bg-submenu"><button class="text-uppercase text-white border-0 hover-nav special-transition special-color">covid-19</button></div>
+            <div class="col-12 h-32 bg-restsubmenu">
+            </div>
         </div>
         <!-- End Navigation -->
     </div>
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 
