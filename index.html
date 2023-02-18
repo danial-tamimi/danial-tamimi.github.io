@@ -27,9 +27,9 @@
 </head>
 
 <body>
-    <div class="container-fluid height-100 nav-bg">
+    <div class="container-fluid position-fixed z-1 bg-opacity-50 height-75">
         <!-- Start Navigation -->
-        <div class="row h-10">
+        <div class="row">
             <div class="col-12 d-flex justify-content-between special-color">
                 <div class="w-60 d-flex align-items-center">
                     <a href="#"
@@ -38,9 +38,10 @@
                 </div>
                 <div class="w-40 ms-3 d-flex justify-content-end align-items-center nav-half">
                     <button
-                        class="d-none d-sm-flex justify-content-sm-center p-2 fs-5 border-0 bg-transparent text-white text-center hover-nav special-transition">
-                        <i class="bi fw-bolder me-2 bi-search"></i>
-                        <span>Search</span>
+                        class="d-none d-sm-flex justify-content-sm-center p-2 fs-5 border-0 bg-transparent text-white text-center hover-nav special-transition searchmenu">
+                        <i class="bi fw-bolder me-2 bi-search searchiconbtn"></i>
+                        <i class="bi fw-bolder me-2 fs-4 bi-x-lg d-none closeiconsearch"></i>
+                        <span class="searchbtntext">Search</span>
                     </button>
                     <button
                         class="d-flex justify-content-center fs-5 p-2 me-3 border-0 bg-transparent text-white ms-4 text-center hover-nav special-transition openmenu">
@@ -51,6 +52,7 @@
                 </div>
             </div>
         </div>
+        <!-- Menu sub menu -->
         <div class="row d-flex justify-content-center h-0 submenu-transition submenu1">
             <!-- Top section of Submenu Start -->
             <div
@@ -77,12 +79,14 @@
                 class="col-6 bg-white border d-flex p-0 justify-content-center align-items-center hover-submenutop special-transition">
                 <a href="#"
                     class="text-center text-capitalize w-100 text-decoration-none fs-6 text-black py-3  fs-pspecial submenu-hovera special-transition">health
-                    care</a></div>
+                    care</a>
+            </div>
             <div
                 class="col-6 bg-white border d-flex p-0 justify-content-center align-items-center hover-submenutop special-transition">
                 <a href="#"
                     class="text-center text-capitalize w-100 text-decoration-none fs-6 text-black py-3  fs-pspecial submenu-hovera special-transition">campus
-                    life</a></div>
+                    life</a>
+            </div>
             <div
                 class="col-6 bg-white border d-flex p-0 justify-content-center align-items-center hover-submenutop special-transition">
                 <a href="#"
@@ -96,22 +100,115 @@
             <!-- Top section of Submenu End-->
             <div class="col-12 bg-submenu text-center pt-4 pb-3 fs-hspecial">Information for:</div>
             <div class="col-12 bg-submenu d-flex justify-content-around flex-wrap">
-                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">students</a>
-                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">faculty & staff</a>
-                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">families</a>
-                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">visitors</a>
-                <a href="#" class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">alumni</a>
+                <a href="#"
+                    class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">students</a>
+                <a href="#"
+                    class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">faculty
+                    & staff</a>
+                <a href="#"
+                    class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">families</a>
+                <a href="#"
+                    class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">visitors</a>
+                <a href="#"
+                    class="text-decoration-none text-capitalize text-black fs-6 m-2 position-relative submenu-hovera special-transition submenu-hovernava">alumni</a>
             </div>
-            <div class="col-12 d-flex justify-content-center align-items-center py-3 bg-submenu"><button class="text-uppercase text-white border-0 hover-nav special-transition special-color">covid-19</button></div>
+            <div class="col-12 d-flex justify-content-center align-items-center py-3 bg-submenu"><button
+                    class="text-uppercase text-white border-0 hover-nav special-transition special-color">covid-19</button>
+            </div>
             <div class="col-12 h-32 bg-restsubmenu">
+            </div>
+        </div>
+        <!-- Search sub menu -->
+        <div
+            class="row d-sm-flex flex-sm-column align-items-sm-center justify-content-sm-center h-0 bg-restsubmenu submenu-transition submenu1 submenu2">
+            <div class="col-12 d-sm-flex flex-sm-column align-items-sm-center justify-content-sm-center">
+                <span class="text-uppercase text-white fw-bolder fs-pspecial mb-3">search stanford:</span>
+                <form action="#" method="post"
+                    class="w-100 d-sm-flex flex-sm-column align-items-sm-center justify-content-sm-center">
+                    <div class="mb-3 w-40 d-sm-flex justify-content-sm-center">
+                        <label for="web" class="fs-6 text-white me-2 pointer fs-hspecial">Web</label>
+                        <input type="radio" id="web" value="web" name="submenuform" class="me-4 pointer submenu-web"
+                            checked>
+                        <label for="people" class="fs-6 text-white me-2 pointer fs-hspecial">People</label>
+                        <input type="radio" id="people" value="people" name="submenuform"
+                            class="pointer submenu-people">
+                    </div>
+                    <input type="text" placeholder="&#128269; Search Stanford Websites"
+                        class="w-75 mx-auto mb-3 h-submenuform searchinput">
+                </form>
+            </div>
+            <div class="col-12 d-sm-flex justify-content-sm-center align-items-sm-center mb-4">
+                <button class="w-75 text-white hover-nav special-color special-transition border-0 h-submenuform">
+                    <i class="bi bi-globe-americas webSubmenuIcon"></i>
+                    <i class="bi bi-people-fill d-none peopleSubmenuIcon"></i>
+                    <span class="submenuBtnText">Serach web</span>
+                </button>
+            </div>
+            <div class="col-12 d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center">
+                <p class="text-white fw-bolder fs-hspecial">Other ways to search :</p>
+                <a href="#"
+                    class="text-white text-capitalize text-decoration-none mb-2 special-transition special-fs-color">map</a>
+                <a href="#"
+                    class="text-white text-capitalize text-decoration-none special-transition special-fs-color">profiles</a>
             </div>
         </div>
         <!-- End Navigation -->
     </div>
+    <!-- Start Part one -->
+    <div class="container-fluid height-100 nav-bg">
+        <div class="row d-flex flex-wrap justify-content-center align-content-between height-100 width-100">
+            <div class="col-12 d-flex justify-content-center align-items-end height-60">
+                <p class="text-white fw-bolder text-uppercase fs-stanfordfirstp fs-hspecial">stanford</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center w-100 h-10 special-color">
+                <a href="#explorestand"
+                    class="d-flex justify-content-center align-items-center text-decoration-none w-75 h-100 pointer text-white text-uppercase fw-bold explore">explore
+                    stanford<i
+                        class="bi bi-arrow-down-short text-white text-uppercase fw-bold fs-3 special-transition"></i></a>
+            </div>
+        </div>
+        <!-- End Part one -->
+    </div>
+    <div class="container-fluid" id="explorestand">
+        <!-- Start Part two -->
+        <div class="row bg-light d-flex flex-column justify-content-evenly align-items-center">
+            <div class="col-12 d-flex flex-column justify-content-evenly align-items-center mt-5">
+                <h2 class="text-center fw-bolder mt-3">Accelerating climate solutions </h2>
+                <p class="text-center">The new Stanford Doerr School of Sustainability is designed to tackle urgent
+                    global challenges</p>
+            </div>
+            <div class="col-12">
+                <img class="img-fluid mt-5" src="images/part2-1.webp" alt="Generatingknowledge"
+                    title="Generating knowledge">
+                <h3 class="fw-bold mt-4 fs-hspecial">Generating knowledge</h3>
+                <p>Experts across seven departments will expand understanding of the natural world and its intersections
+                    with human society</p>
+                <a href="#" class="text-decoration-none pointer rightarrow">Departments<i class="bi bi-chevron-right special-transition"></i></a>
+            </div>
+            <div class="col-12">
+                <img class="img-fluid mt-5" src="images/part2-2.webp" alt="Bridgingfields" title="Bridging fields">
+                <h3 class="fw-bold mt-4 fs-hspecial">Bridging fields</h3>
+                <p>Interdisciplinary institutes will bring together versatile teams to tackle critical challenges in
+                    energy, the environment, and sustainable societies</p>
+                <a href="#" class="text-decoration-none pointer rightarrow">Institutes<i class="bi bi-chevron-right special-transition"></i></a>
+            </div>
+            <div class="col-12 mb-5">
+                <img class="img-fluid mt-5" src="images/part2-3.webp" alt="Drivingimpact" title="Driving impact">
+                <h3 class="fw-bold mt-4 fs-hspecial">Driving impact</h3>
+                <p>A new Sustainability Accelerator will draw expertise from across and beyond the university to
+                    co-create and scale solutions</p>
+                <a href="#" class="text-decoration-none pointer rightarrow">Sustainability Accelerator<i
+                        class="bi bi-chevron-right special-transition"></i></a>
+            </div>
+        </div>
+        <!-- End part two -->
+        <!-- Start Part three -->
+    </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 
