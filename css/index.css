@@ -123,6 +123,47 @@
     transform: scaleX(1) !important;
 }
 
+/* part four */
+
+.shadow-part4{
+    box-shadow: 2px 2px 5px gray,-2px 0px 5px gray;
+}
+
+.shadow-part4:hover{
+    box-shadow: 5px 5px 5px gray,-5px 0px 5px gray;
+}
+
+.shadow-part4:hover .part4-a{
+    color: #00548f !important;
+}
+
+.part4-imgbox{
+    overflow: hidden !important;
+}
+
+.part4-img:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.part5-colbg{
+    -moz-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* part five */
+.part5-bg{
+    background-image: url("../images/part5-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Part Eight */
+.part8-bg{
+    background-color: #f9f6ef;
+}
 @media all and (max-width:767.5px) {
 
     /* Navigation  */
