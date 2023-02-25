@@ -164,6 +164,13 @@
 .part8-bg{
     background-color: #f9f6ef;
 }
+
+/* Part nine  */
+.part9-bg{
+    background-image: url("../images/part9-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
 @media all and (max-width:767.5px) {
 
     /* Navigation  */
