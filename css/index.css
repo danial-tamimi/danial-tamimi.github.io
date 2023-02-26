@@ -171,6 +171,17 @@
     background-position: center;
     background-size: cover;
 }
+/* Part 12 */
+.part12-rowbg{
+    background-color: #2f2424;
+}
+.part12-colbg{
+    background-color: #544948;
+}
+
+.part12-colbg:hover .part12-a{
+    color: #006cb8 !important;
+}
 @media all and (max-width:767.5px) {
 
     /* Navigation  */
