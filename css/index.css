@@ -1,284 +1,87 @@
-.w-60 {
-    width: 60%;
+.w-12{
+    width: 12.5% !important;
 }
 
-.first-z{
-    z-index: -1 !important;
-}
-
-.width-100{
-    width: 100vw !important;
-}
-
-.w-40 {
-    width: 40%;
-}
-
-.height-75{
-    height: 75vh !important;
-}
-
-.height-60{
-    height: 55vh !important;
-}
-
-.height-100 {
-    height: 100vh !important;
-}
-
-.fs-hspecial {
-    font-family: 'Roboto Slab', serif;
-}
-
-.fs-pspecial {
-    font-family: 'Quicksand', sans-serif;
-}
-
-.specific-fs-color{
-    color: #8d1717 !important;
-}
-.special-fs-color:hover {
-    color: #b1040e !important;
-}
-
-.special-transition {
-    -moz-transition: all 300ms ease-in-out 0s;
-    -webkit-transition: all 300ms ease-in-out 0s;
-    transition: all 300ms ease-in-out 0s !important;
-}
-
-.h-0 {
+.h-0{
     height: 0 !important;
 }
 
-.nav-bg {
-    background-image: url("../images/body-bg.jpg");
+.height-100{
+    height: 100vh !important;
+}
+.pointer{
+    cursor:pointer  !important;
+}
+.specialBackGroundColorBlue{
+    background-color: rgba(0,103,160,1) !important;
+}
+
+.generalTransition{
+    -moz-transition: all 300ms ease 0s;
+    -webkit-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
+}
+
+.longTransition{
+    -moz-transition: all 500ms ease 0s;
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;   
+}
+
+.specialColorOrange:hover{
+    color: rgba(194,98,0,1) !important;
+}
+
+/* part one */
+.partoneBackGround{
+    background-image: url("../images/mainBackGround.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+}
+/* rgba(0,98,0,0.53) Green */
+
+.btmBorderHoverOrange:hover{
+    color: rgba(194,98,0,1) !important;
 }
 
-.hover-nav:hover {
-    background-color: #820000 !important;
-    color: black !important;
-}
-
-.pointer {
-    cursor: pointer !important;
-}
-
-.h-10 {
-    height: 10%;
-}
-
-.h-90 {
-    height: 90%;
-}
-
-.submenu1 {
-    overflow: hidden;
-}
-
-.submenu-hovera:hover {
-    color: #b1040e !important;
-}
-
-.fs-stanfordfirstp {
-    font-size: calc(45px + 1.5vw) !important;
-}
-
-.explore:hover .bi-arrow-down-short{
-    margin-top: 10px;
-}
-
-.rightarrow:hover .bi-chevron-right{
-    margin-left: 8px !important;
-}
-
-.part3-hover::before{
+.btmBorderHoverOrange::before{
     content: "";
     display: block;
     width: 100%;
-    height: 4px;
+    height: 1.5px;
     border-radius: 5px;
-    background-color: #00548f;
+    background-color: rgba(194,98,0,1) !important;
     position: absolute;
-    left: 0%;
-    top: 80%;
     z-index: 1;
+    top: 100%;
+    bottom: 0%;
+    -moz-transition: all 300ms ease 0s;
+    -webkit-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
     -moz-transform: scaleX(0);
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -moz-transform-origin: left;
-    -webkit-transform-origin: left;
     transform-origin: left;
-    -moz-transition: all 300ms ease 0s;
-    -webkit-transition: all 300ms ease 0s;
-    transition: all 300ms ease 0s !important;
 }
 
-.part3-hover:hover::before {
+.btmBorderHoverOrange:hover::before{
     -moz-transform: scaleX(1);
     -webkit-transform: scaleX(1);
-    transform: scaleX(1) !important;
+    transform: scaleX(1);
 }
 
-/* part four */
 
-.shadow-part4{
-    box-shadow: 2px 2px 5px gray,-2px 0px 5px gray;
-}
-
-.shadow-part4:hover{
-    box-shadow: 5px 5px 5px gray,-5px 0px 5px gray;
-}
-
-.shadow-part4:hover .part4-a{
-    color: #00548f !important;
-}
-
-.part4-imgbox{
-    overflow: hidden !important;
-}
-
-.part4-img:hover{
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.part5-colbg{
-    -moz-backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-}
-
-/* part five */
-.part5-bg{
-    background-image: url("../images/part5-bg.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-/* Part Eight */
-.part8-bg{
-    background-color: #f9f6ef;
-}
-
-/* Part nine  */
-.part9-bg{
-    background-image: url("../images/part9-bg.jpg");
-    background-position: center;
-    background-size: cover;
-}
-/* Part 12 */
-.part12-rowbg{
-    background-color: #2f2424;
-}
-.part12-colbg{
-    background-color: #544948;
-}
-
-.part12-colbg:hover .part12-a{
-    color: #006cb8 !important;
-}
-/* Part 15 */
-.part15-bg{
-    background-image: url("../images/Part15-1.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.part15-a{
-    font-size: xx-large;
-}
-
-.part15-a:hover{
-    color: #b1040e !important;
-}
-
-/* Part16 */
-.part16-a:hover{
-    color: #006cb8 !important;
-    text-decoration: underline !important;
-}
-
-.part16-btn:hover{
-    color: #820000 !important;
-    border-color: #8d1717 !important;
-}
-
-/* footer */
-.footer-a:hover{
-    color: black !important;
-}
-@media all and (max-width:767.5px) {
-
-    /* Navigation  */
-
-    .special-color {
-        background-color: #b1040e;
+/* xsm & sm & md */
+@media all and (max-width:767.5px){
+    .menu-size{
+        font-size: calc(17px + 2.5vw) !important;
+    }
+    .menu-design{
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
-    .h-32 {
-        height: 32%;
-    }
-
-    .bg-submenu {
-        background-color: #f4f4f4;
-    }
-
-    .submenu-transition {
-        -moz-transition: all 800ms ease-in-out 0s;
-        -webkit-transition: all 800ms ease-in-out 0s;
-        transition: all 800ms ease-in-out 0s !important;
-    }
-
-    .hover-submenutop:hover {
-        background-color: #f4f4f4 !important;
-    }
-
-
-    .submenu-hovernava::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 2px;
-        border-radius: 5px;
-        background-color: #b1040e;
-        position: absolute;
-        left: 0%;
-        top: 100%;
-        z-index: 1;
-        -moz-transform: scaleX(0);
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -moz-transform-origin: left;
-        -webkit-transform-origin: left;
-        transform-origin: left;
-        -moz-transition: all 300ms ease 0s;
-        -webkit-transition: all 300ms ease 0s;
-        transition: all 300ms ease 0s !important;
-    }
-
-    .submenu-hovernava:hover::before {
-        -moz-transform: scaleX(1);
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1) !important;
-    }
-
-    .bg-restsubmenu {
-        background-color: rgba(120, 120, 120, 0.8);
-    }
-
-    .h-submenuform {
-        height: 55px !important;
-    }
-
-    /* part four */
-    .bg-part4{
-        background-color: #f9f6ef;
+    .submenuHeight100{
+        height: 50vh !important;
     }
 }
-
-@media all and (min-width:1200px) {}
