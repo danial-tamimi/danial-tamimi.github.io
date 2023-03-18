@@ -1,56 +1,126 @@
-.w-12{
-    width: 12.5% !important;
+.w-13 {
+    width: 13.5% !important;
 }
 
-.h-0{
+.backGroundColorMilky{
+    background-color: whitesmoke !important;
+}
+
+.text-justify{
+    text-align: justify !important;
+}
+
+.designButton{
+    border:1.5px solid rgb(53, 167, 228) !important;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(53, 167, 228) !important;
+}
+
+.designButton:hover .designButtonChevron{
+    margin-left: 10px !important;
+}
+
+.zoomhover:hover{
+    -moz-transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+.designButton:hover{
+    color: rgba(194, 98, 0, 1) !important;
+    border-radius: 0;
+    border-color: rgba(194, 98, 0, 1) !important;
+}
+
+.fsSerif{
+    font-family: 'Merriweather', serif !important;
+}
+
+.hoverMotherArrowDown:hover .hoverArrowDown{
+    margin-bottom: -10px !important;
+}
+
+.h-7{
+    height: 7% !important;
+}
+
+.h-93{
+    height: 93% !important;
+}
+
+.textShadow{
+    text-shadow: 1.5px 1.5px gray!important;
+}
+
+.fsHeader {
+    font-size: calc(20px + 1.2vw) !important;
+}
+
+.h-0 {
     height: 0 !important;
 }
 
-.height-100{
+.height-100 {
     height: 100vh !important;
 }
-.pointer{
-    cursor:pointer  !important;
-}
-.specialBackGroundColorBlue{
-    background-color: rgba(0,103,160,1) !important;
+
+.pointer {
+    cursor: pointer !important;
 }
 
-.generalTransition{
+.fsPartOne {
+    font-size: calc(55px + 2.5vw) !important;
+}
+
+.specialcolorGreen{
+    color: rgba(0, 60, 0, 1) !important;
+}
+
+.specialBackGroundColorGreen {
+    background-color: rgba(0, 60, 0, 1) !important;
+}
+
+.fsHandWriting {
+    font-family: 'Clicker Script', cursive;
+}
+
+.generalTransition {
     -moz-transition: all 300ms ease 0s;
     -webkit-transition: all 300ms ease 0s;
     transition: all 300ms ease 0s;
 }
 
-.longTransition{
+.longTransition {
     -moz-transition: all 500ms ease 0s;
     -webkit-transition: all 500ms ease 0s;
-    transition: all 500ms ease 0s;   
+    transition: all 500ms ease 0s;
 }
 
-.specialColorOrange:hover{
-    color: rgba(194,98,0,1) !important;
+.specialColorOrange:hover {
+    color: rgba(194, 98, 0, 1) !important;
 }
 
 /* part one */
-.partoneBackGround{
+.partoneBackGround {
     background-image: url("../images/mainBackGround.jpg");
     background-position: center;
     background-size: cover;
 }
+
 /* rgba(0,98,0,0.53) Green */
 
-.btmBorderHoverOrange:hover{
-    color: rgba(194,98,0,1) !important;
+.btmBorderHoverOrange:hover {
+    color: rgba(194, 98, 0, 1) !important;
 }
 
-.btmBorderHoverOrange::before{
+.btmBorderHoverOrange::before {
     content: "";
     display: block;
     width: 100%;
     height: 1.5px;
     border-radius: 5px;
-    background-color: rgba(194,98,0,1) !important;
+    background-color: rgba(194, 98, 0, 1) !important;
     position: absolute;
     z-index: 1;
     top: 100%;
@@ -64,7 +134,7 @@
     transform-origin: left;
 }
 
-.btmBorderHoverOrange:hover::before{
+.btmBorderHoverOrange:hover::before {
     -moz-transform: scaleX(1);
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -72,16 +142,17 @@
 
 
 /* xsm & sm & md */
-@media all and (max-width:767.5px){
-    .menu-size{
+@media all and (max-width:767.5px) {
+    .menu-size {
         font-size: calc(17px + 2.5vw) !important;
     }
-    .menu-design{
+
+    .menu-design {
         border-top-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
 
-    .submenuHeight100{
+    .submenuHeight100 {
         height: 50vh !important;
     }
 }
