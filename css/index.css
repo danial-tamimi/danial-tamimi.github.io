@@ -1,56 +1,78 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .w-13 {
     width: 13.5% !important;
 }
 
-.backGroundColorMilky{
+.w-85 {
+    width: 85% !important;
+}
+
+.w-90{
+    width: 90% !important;
+}
+
+.backGroundColorMilky {
     background-color: whitesmoke !important;
 }
 
-.text-justify{
+.list-group-circle{
+    list-style-type: disc !important;
+}
+
+.text-justify {
     text-align: justify !important;
 }
 
-.designButton{
-    border:1.5px solid rgb(53, 167, 228) !important;
+.designButton {
+    border: 1.5px solid rgb(53, 167, 228) !important;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color: rgb(53, 167, 228) !important;
 }
 
-.designButton:hover .designButtonChevron{
+.designButton:hover .designButtonChevron {
     margin-left: 10px !important;
 }
 
-.zoomhover:hover{
+.zoomhover:hover {
     -moz-transform: scale(1.06);
     -webkit-transform: scale(1.06);
     transform: scale(1.06);
 }
 
-.designButton:hover{
+.backDropFilterImg {
+    -moz-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.designButton:hover {
     color: rgba(194, 98, 0, 1) !important;
     border-radius: 0;
     border-color: rgba(194, 98, 0, 1) !important;
 }
 
-.fsSerif{
-    font-family: 'Merriweather', serif !important;
+.fsSerif {
+    font-family: 'Cinzel', serif !important;
 }
 
-.hoverMotherArrowDown:hover .hoverArrowDown{
+.hoverMotherArrowDown:hover .hoverArrowDown {
     margin-bottom: -10px !important;
 }
 
-.h-7{
+.h-7 {
     height: 7% !important;
 }
 
-.h-93{
+.h-93 {
     height: 93% !important;
 }
 
-.textShadow{
-    text-shadow: 1.5px 1.5px gray!important;
+.textShadow {
+    text-shadow: 1.5px 1.5px gray !important;
 }
 
 .fsHeader {
@@ -73,13 +95,27 @@
     font-size: calc(55px + 2.5vw) !important;
 }
 
-.specialcolorGreen{
+.specialcolorGreen {
     color: rgba(0, 60, 0, 1) !important;
 }
 
-.specialBackGroundColorGreen {
-    background-color: rgba(0, 60, 0, 1) !important;
+.specialBackGroundColorBrown {
+    background-color: rgba(87, 78, 68, 1) !important;
+} 
+
+.NavBackGroundColorBrown{
+    background-color: rgba(87, 78, 68, 0.7) !important;
 }
+
+/* part three: 4cards
+part 4: experience
+part five: package
+part six : slider 
+amelia 
+part seven : FQS 
+part 8 : forum -> name. last name. email. number . request day . textbox 
+part 9: contact us -> number email
+footer */
 
 .fsHandWriting {
     font-family: 'Clicker Script', cursive;
@@ -98,7 +134,7 @@
 }
 
 .specialColorOrange:hover {
-    color: rgba(194, 98, 0, 1) !important;
+    color: #60807d !important;
 }
 
 /* part one */
@@ -107,8 +143,6 @@
     background-position: center;
     background-size: cover;
 }
-
-/* rgba(0,98,0,0.53) Green */
 
 .btmBorderHoverOrange:hover {
     color: rgba(194, 98, 0, 1) !important;
@@ -134,15 +168,34 @@
     transform-origin: left;
 }
 
+/* #92debe */
+
+/* #deafa2 */
+
 .btmBorderHoverOrange:hover::before {
     -moz-transform: scaleX(1);
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
+/* Part Three */
+.partThreeBackGround{
+    background-image: url(../images/partThree.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Part Four */
+.partFourBackGround {
+    background-image: url(../images/part3BackGround.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 /* xsm & sm & md */
 @media all and (max-width:767.5px) {
+
+    /* Navigation */
     .menu-size {
         font-size: calc(17px + 2.5vw) !important;
     }
@@ -153,6 +206,30 @@
     }
 
     .submenuHeight100 {
-        height: 50vh !important;
+        height: 75vh !important;
     }
+
+    .designSubMenuA {
+        text-shadow: 1.8px 1.8px black;
+        font-size: x-large;
+    }
+
+    .navPositionsm{
+        position: fixed;
+        z-index: 1 !important;
+    }
+
+    .subMenuPositionsm{
+        position: fixed !important;
+        z-index: 2 !important;
+    }
+
+    .submenuHover:hover{
+    color: #60807d !important;
+    }
+
+    .MenudesignHover:hover{
+        background-color: #3d3d3d !important;
+    }
+
 }
