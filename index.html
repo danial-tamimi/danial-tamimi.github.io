@@ -29,6 +29,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -39,65 +51,96 @@
                 <div
                     class="w-100 d-flex justify-content-between align-items-center px-4 py-3 NavBackGroundColorBrown navPositionsm">
                     <div class="d-flex align-items-center w-75">
-                        <img src="images/animaSanaLogo.png" class="d-block w-13 float-start" alt="animaSana">
+                        <img src="images/animaSanaLogo.png" class="d-block float-start logoSize" alt="animaSana">
                         <a href="index.html"
-                            class="ms-4 text-uppercase text-white pointer text-decoration-none fsHeader fsSerif"
+                            class="ms-3 text-uppercase text-white pointer text-decoration-none fsHeader fsSerif"
                             title="AnimaSana">Anima&nbsp;sana</a>
                     </div>
                     <div class="border border-white menu-design pointer menuButton">
                         <i
                             class="bi bi-list px-2 text-white text-center fw-bolder menu-size specialColorOrange generalTransition openMenu"></i>
-                        <i
-                            class="bi bi-x-lg d-none px-2 text-white text-center fw-bolder menu-size specialColorOrange generalTransition closeMenu"></i>
                     </div>
                 </div>
-                <div class="h-100 w-100 longTransition submenu subMenuPositionsm backDropFilterImg">
+                <div
+                    class="h-100 w-100 overflow-hidden longTransition submenu subMenuPositionsm backDropFilterImg longTransition closeSubMenu">
                     <!-- Main SubMenu Xs -->
                     <div class="h-100 float-end w-90 specialBackGroundColorBrown">
                         <i class="bi bi-x-lg px-2 text-white text-center fw-bolder menu-size specialColorOrange generalTransition closeMenu pointer"
                             title="Close"></i>
-                        <div class="d-flex justify-content-center align-items-center mt-4 mb-5">
+                        <div class="d-flex justify-content-center align-items-center mt-4 mb-4">
                             <img src="" alt="">
                             <span class="text-center fw-bolder fs-5 fsSerif">Anima Sana</span>
                         </div>
-                        <ul class="d-flex flex-column align-items-center justify-content-evenly h-75 list-unstyled">
+                        <ul class="d-flex flex-column align-items-center h-100 list-unstyled">
                             <li class="w-100 mx-auto"><a
-                                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 position-relative designSubMenuA MenudesignHover generalTransition"
+                                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 py-3 position-relative designSubMenuA MenudesignHover generalTransition navigationff"
                                     href="index.html">Home</a>
                             </li>
                             <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
-                            <li class="w-100 mx-auto"><a
-                                    class="text-decoration-none w-100 text-center d-inline-block position-relative text-white designSubMenuA MenudesignHover generalTransition pointer p-2 mb-2">Retreat
+                            <!-- Retreat Sub Menu -->
+                            <li class="w-100 mx-auto motherRetreatSubMenu"><a
+                                    class="text-decoration-none w-100 text-center d-inline-block position-relative text-white designSubMenuA MenudesignHover generalTransition pointer p-2 py-3 mb-2 navigationff">Retreat
                                     & Heal
-                                    <i class="bi bi-chevron-down fs-6 ps-2"></i></a>
+                                    <i class="bi bi-chevron-down fs-6 ps-2 retreatMenuChevron"></i></a>
                                 <ul
-                                    class="d-flex flex-column justify-content-between align-items-start fw-bolder border border-dark w-100 list-group-circle">
-                                    <li class="py-2 w-100 mb-2"><a href="pages/experience.html" class="text-black submenuHover generalTransition">What does this experience entail?</a></li>
-                                    <li class="py-2 mb-2"><a href="pages/benefitsretreat.html" class="text-center text-black submenuHover generalTransition">What are the
+                                    class="d-flex flex-column justify-content-start align-items-start fw-bolder w-100 h-0 overflow-hidden longTransition list-unstyled retreatSubMenu">
+                                    <li class="w-100 bg-dark">
+                                        <a href="pages/experience.html"
+                                            class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">What
+                                            does this experience entail?</a>
+                                    </li>
+                                    <li class="w-100 bg-dark">
+                                        <a href="pages/benefitsretreat.html"
+                                            class="d-inline-block py-3 w-100 text-center text-black text-decoration-none border-bottom border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">What
+                                            are the
                                             benefits of an intensive
-                                            retreat?</a></li>
-                                    <li class="py-2 mb-2"><a href="pages/accomplish.html" class=" text-black generalTransition submenuHover">What can I expect to accomplish?</a></li>
-                                    <li class="py-2 mb-2"><a href="pages/ourhelp.html" class="text-black generalTransition submenuHover">What we help with?</a></li>
-                                    <li class="py-2 mb-2"><a href="pages/pricing.html" class="text-black generalTransition submenuHover">Pricing & FAQ's</a></li>
+                                            retreat?</a>
+                                    </li>
+                                    <li class="w-100 bg-dark">
+                                        <a href="pages/accomplish.html"
+                                            class=" d-inline-block py-3 w-100 text-black text-center text-decoration-none border-bottom border-secondary generalTransition submenuColorA MenudesignHover generalffsanserif">What
+                                            can I expect to accomplish?</a>
+                                    </li>
+                                    <li class="w-100 bg-dark">
+                                        <a href="pages/ourhelp.html"
+                                            class="d-inline-block py-3 w-100 text-center text-decoration-none border-bottom border-secondary text-black generalTransition submenuColorA MenudesignHover generalffsanserif">What
+                                            we help with?</a>
+                                    </li>
+                                    <li class="w-100 bg-dark">
+                                        <a href="pages/pricing.html"
+                                            class="d-inline-block py-3 w-100 text-center text-black text-decoration-none generalTransition submenuColorA MenudesignHover generalffsanserif">Pricing
+                                            & FAQ's</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
+                            <!-- Therapy Sub menu -->
+                            <li class="w-100 mx-auto motherTherapySubMenu"><a
+                                    class="text-decoration-none w-100 text-center d-inline-block position-relative text-white designSubMenuA MenudesignHover generalTransition pointer p-2 py-3 mb-2 navigationff">Therapies
+                                    <i class="bi bi-chevron-down fs-6 ps-2 therapyMenuChevron"></i></a>
+                                <ul
+                                    class="d-flex flex-column justify-content-start align-items-start fw-bolder w-100 h-0 overflow-hidden longTransition list-unstyled therapySubMenu">
+                                    <li class="w-100 bg-dark">
+                                        <a href="pages/emdr.html"
+                                            class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">EMDR</a>
+                                    </li>
+                                    <li class="w-100 bg-dark">
+                                        <a href="pages/breathwork.html"
+                                            class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">Breathwork</a>
+                                    </li>
+                                    <li class="w-100 bg-dark">
+                                        <a href="pages/trauma.html"
+                                            class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">Trauma</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
                             <li class="w-100 mx-auto"><a
-                                    class="text-decoration-none d-inline-block text-center w-100 text-white p-2 position-relative d designSubMenuA MenudesignHover generalTransition pointer">Therapies
-                                    <i class="bi bi-chevron-down fs-6 ps-2"></i></a>
-                                <!-- <ul>
-                                    <li><a href="pages/emdr.html">EMDR</a></li>
-                                    <li><a href="pages/breathwork.html">Breathwork</a></li>
-                                    <li><a href="pages/trauma.html">Trauma</a></li>
-                                </ul> -->
-                            </li>
-                            <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
-                            <li class="w-100 mx-auto"><a
-                                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 position-relative designSubMenuA MenudesignHover generalTransition"
+                                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 py-3 position-relative designSubMenuA MenudesignHover generalTransition navigationff"
                                     href="pages/aboutus.html">About us</a></li>
                             <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
                             <li class="w-100 mx-auto"><a
-                                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 position-relative MenudesignHover generalTransition designSubMenuA"
+                                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 py-3 position-relative MenudesignHover generalTransition designSubMenuA navigationff"
                                     href="pages/contactus.html">Contact us</a></li>
                         </ul>
                     </div>
@@ -106,14 +149,14 @@
         </div>
         <!-- Part one -->
         <div class="row d-flex flex-column justify-content-center align-items-center partoneBackGround height-100">
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center h-93">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center h-93 bg-dark bg-opacity-50">
                 <h3 class="fw-bolder fsPartOne fsHandWriting">welcome !</h3>
                 <h1 class="fw-bolder fsPartOne fsHandWriting">Anima Sana</h1>
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center p-0 specialBackGroundColorBrown h-7"
                 id="aboutUS">
                 <a href="#aboutUS"
-                    class="text-decoration-none d-flex align-items-center justify-content-center text-white text-center w-100 h-100 fs-6 hoverMotherArrowDown">Explore
+                    class="text-decoration-none d-flex align-items-center justify-content-center text-white text-center w-100 h-100 fs-6 hoverMotherArrowDown generalffsanserif">Explore
                     Anima Sana&nbsp;<i class="bi bi-arrow-down-short hoverArrowDown generalTransition"></i></a>
             </div>
         </div>

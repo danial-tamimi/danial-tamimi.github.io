@@ -2,8 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
-.w-13 {
-    width: 13.5% !important;
+.w-0{
+    width: 0 !important;
+}
+
+.logoSize {
+    width: calc(35px + 2.6vw) !important;
 }
 
 .w-85 {
@@ -76,7 +80,7 @@ html {
 }
 
 .fsHeader {
-    font-size: calc(20px + 1.2vw) !important;
+    font-size: calc(20px + 0.5vw) !important;
 }
 
 .h-0 {
@@ -148,6 +152,14 @@ footer */
     color: rgba(194, 98, 0, 1) !important;
 }
 
+.generalffsanserif{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.navigationff{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
 .btmBorderHoverOrange::before {
     content: "";
     display: block;
@@ -210,7 +222,6 @@ footer */
     }
 
     .designSubMenuA {
-        text-shadow: 1.8px 1.8px black;
         font-size: x-large;
     }
 
@@ -224,12 +235,20 @@ footer */
         z-index: 2 !important;
     }
 
-    .submenuHover:hover{
+    .submenuColorA{
     color: #60807d !important;
     }
 
     .MenudesignHover:hover{
-        background-color: #3d3d3d !important;
+        background-color: rgba(48, 48, 48, 1) !important;
+    }
+
+    .closeSubMenu{
+        right: -100% !important;
+    }
+
+    .openSubMenu{
+        right: 0 !important;
     }
 
 }
