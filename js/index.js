@@ -62,3 +62,24 @@ THERAPYMENU.addEventListener("click", function () {
         therapyMenuChevron.classList.remove("bi-chevron-up");
     }
 });
+
+// Retreat SubMenu MD
+const RETREATMENUMD = document.querySelector(".motherSubMenumdRetreat");
+const RETREATSUBMENUMD = document.querySelector(".subMenumdRetreat");
+let retreatMenuMDChevron = document.querySelector(".chevronSubMenumdRetreat");
+RETREATMENUMD.addEventListener("click", function () {
+
+    if (RETREATSUBMENUMD.classList.contains("h-0")) {
+        RETREATSUBMENUMD.classList.remove("h-0");
+        RETREATMENUMD.classList.remove("overflow-hidden");
+        retreatMenuMDChevron.classList.remove("bi-chevron-down");
+        retreatMenuMDChevron.classList.add("bi-chevron-up");
+    }
+
+    else {
+        RETREATSUBMENUMD.classList.add("h-0");
+        RETREATSUBMENUMD.classList.add("overflow-hidden");
+        retreatMenuMDChevron.classList.add("bi-chevron-down");
+        retreatMenuMDChevron.classList.remove("bi-chevron-up");
+    }
+});

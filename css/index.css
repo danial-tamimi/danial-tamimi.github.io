@@ -2,8 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
-.w-0{
+.w-0 {
     width: 0 !important;
+}
+
+.w-70 {
+    width: 70% !important;
 }
 
 .logoSize {
@@ -14,7 +18,7 @@ html {
     width: 85% !important;
 }
 
-.w-90{
+.w-90 {
     width: 90% !important;
 }
 
@@ -22,7 +26,7 @@ html {
     background-color: whitesmoke !important;
 }
 
-.list-group-circle{
+.list-group-circle {
     list-style-type: disc !important;
 }
 
@@ -80,7 +84,7 @@ html {
 }
 
 .fsHeader {
-    font-size: calc(20px + 0.5vw) !important;
+    font-size: calc(17px + 0.4vw) !important;
 }
 
 .h-0 {
@@ -103,12 +107,16 @@ html {
     color: rgba(0, 60, 0, 1) !important;
 }
 
-.specialBackGroundColorBrown {
-    background-color: rgba(87, 78, 68, 1) !important;
-} 
+/* orange #D7B377 */
 
-.NavBackGroundColorBrown{
-    background-color: rgba(87, 78, 68, 0.7) !important;
+/* Blue #8AA29E  */
+
+.specialBackGroundColorBlue {
+    background-color: rgba(138, 162, 158, 1) !important;
+}
+
+.NavBackGroundColorBlue {
+    background-color: rgba(138, 162, 158, 0.7) !important;
 }
 
 /* part three: 4cards
@@ -138,9 +146,14 @@ footer */
 }
 
 .specialColorOrange:hover {
-    color: #60807d !important;
+    color: #D7B377 !important;
 }
 
+/* Navigation */
+.designMenu{
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+}
 /* part one */
 .partoneBackGround {
     background-image: url("../images/mainBackGround.jpg");
@@ -149,14 +162,18 @@ footer */
 }
 
 .btmBorderHoverOrange:hover {
-    color: rgba(194, 98, 0, 1) !important;
+    color: rgb(88, 118, 115) !important;
 }
 
-.generalffsanserif{
+.backGroundColorOrange{
+    background-color: #D7B377 !important;
+}
+
+.generalffsanserif {
     font-family: 'Roboto', sans-serif !important;
 }
 
-.navigationff{
+.navigationff {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -166,7 +183,7 @@ footer */
     width: 100%;
     height: 1.5px;
     border-radius: 5px;
-    background-color: rgba(194, 98, 0, 1) !important;
+    background-color: rgb(88, 118, 115) !important;
     position: absolute;
     z-index: 1;
     top: 100%;
@@ -180,9 +197,18 @@ footer */
     transform-origin: left;
 }
 
-/* #92debe */
+.designSubMenuA {
+    font-size: x-large;
+}
 
-/* #deafa2 */
+.submenuColorA {
+    color: #D7B377 !important;
+}
+
+.MenudesignHover:hover {
+    background-color: rgba(48, 48, 48, 1) !important;
+    color: rgba(110, 142, 139, 1) !important;
+}
 
 .btmBorderHoverOrange:hover::before {
     -moz-transform: scaleX(1);
@@ -191,7 +217,7 @@ footer */
 }
 
 /* Part Three */
-.partThreeBackGround{
+.partThreeBackGround {
     background-image: url(../images/partThree.gif);
     background-position: center;
     background-size: cover;
@@ -212,6 +238,10 @@ footer */
         font-size: calc(17px + 2.5vw) !important;
     }
 
+    .navsizexs {
+        width: 100% !important;
+    }
+
     .menu-design {
         border-top-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -221,34 +251,50 @@ footer */
         height: 75vh !important;
     }
 
-    .designSubMenuA {
-        font-size: x-large;
-    }
-
-    .navPositionsm{
+    .navPositionsm {
         position: fixed;
         z-index: 1 !important;
     }
 
-    .subMenuPositionsm{
+    .subMenuPositionsm {
         position: fixed !important;
         z-index: 2 !important;
     }
 
-    .submenuColorA{
-    color: #60807d !important;
-    }
-
-    .MenudesignHover:hover{
-        background-color: rgba(48, 48, 48, 1) !important;
-    }
-
-    .closeSubMenu{
+    .closeSubMenu {
         right: -100% !important;
     }
 
-    .openSubMenu{
+    .openSubMenu {
         right: 0 !important;
     }
 
+    .px-sm{
+        padding-left: 45px;
+    }
+
+    .wmenuxs {
+        width: 75%;
+    }
+
+}
+
+@media all and (min-width:768px) {
+    .position-md-fixed {
+        position: fixed !important;
+        z-index: 1 !important;
+    }
+
+    .wmenulg {
+        width: 15%;
+    }
+
+    .subMenumd {
+        top: 100%;
+        width: calc(150px + 2vw) !important;
+    }
+
+    .subMenumdRetreat{
+        height: 150vh !important;
+    }
 }
