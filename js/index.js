@@ -68,18 +68,49 @@ const RETREATMENUMD = document.querySelector(".motherSubMenumdRetreat");
 const RETREATSUBMENUMD = document.querySelector(".subMenumdRetreat");
 let retreatMenuMDChevron = document.querySelector(".chevronSubMenumdRetreat");
 RETREATMENUMD.addEventListener("click", function () {
-
-    if (RETREATSUBMENUMD.classList.contains("h-0")) {
-        RETREATSUBMENUMD.classList.remove("h-0");
-        RETREATMENUMD.classList.remove("overflow-hidden");
-        retreatMenuMDChevron.classList.remove("bi-chevron-down");
-        retreatMenuMDChevron.classList.add("bi-chevron-up");
+    if (THERAPIESSUBMENUMD.classList.contains("heightMenumdRetreat")) {
+        THERAPIESSUBMENUMD.classList.remove("heightMenumdRetreat");
+        therapiesMenuMDChevron.classList.add("bi-chevron-down");
+        therapiesMenuMDChevron.classList.remove("bi-chevron-up");
     }
 
-    else {
-        RETREATSUBMENUMD.classList.add("h-0");
-        RETREATSUBMENUMD.classList.add("overflow-hidden");
+    setTimeout(function () {
+        if (RETREATSUBMENUMD.classList.contains("heightMenumdRetreat")) {
+            RETREATSUBMENUMD.classList.remove("heightMenumdRetreat");
+            retreatMenuMDChevron.classList.add("bi-chevron-down");
+            retreatMenuMDChevron.classList.remove("bi-chevron-up");
+        }
+
+        else {
+            RETREATSUBMENUMD.classList.add("heightMenumdRetreat");
+            retreatMenuMDChevron.classList.remove("bi-chevron-down");
+            retreatMenuMDChevron.classList.add("bi-chevron-up");
+        }
+    }, 1);
+
+});
+
+// Therapies SubMenu MD
+const THERAPIESMENUMD = document.querySelector(".motherSubMenumdTherapies");
+const THERAPIESSUBMENUMD = document.querySelector(".subMenumdTherapies");
+let therapiesMenuMDChevron = document.querySelector(".chevronSubMenumdTherapies");
+THERAPIESMENUMD.addEventListener("click", function () {
+    if (RETREATSUBMENUMD.classList.contains("heightMenumdRetreat")) {
+        RETREATSUBMENUMD.classList.remove("heightMenumdRetreat");
         retreatMenuMDChevron.classList.add("bi-chevron-down");
         retreatMenuMDChevron.classList.remove("bi-chevron-up");
     }
+    setTimeout(function () {
+        if (THERAPIESSUBMENUMD.classList.contains("heightMenumdRetreat")) {
+            THERAPIESSUBMENUMD.classList.remove("heightMenumdRetreat");
+            therapiesMenuMDChevron.classList.add("bi-chevron-down");
+            therapiesMenuMDChevron.classList.remove("bi-chevron-up");
+        }
+
+        else {
+            THERAPIESSUBMENUMD.classList.add("heightMenumdRetreat");
+            therapiesMenuMDChevron.classList.remove("bi-chevron-down");
+            therapiesMenuMDChevron.classList.add("bi-chevron-up");
+        }
+    }, 1);
 });
