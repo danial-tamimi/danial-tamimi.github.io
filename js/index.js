@@ -114,3 +114,41 @@ THERAPIESMENUMD.addEventListener("click", function () {
         }
     }, 1);
 });
+
+// Slider
+const SLIDERRIGHTBTN = document.querySelector(".sliderRightBTN");
+const SLIDERLEFTBTN = document.querySelector(".sliderLeftBTN");
+const SLIDER = document.querySelector(".slider_containers");
+let ww = document.querySelector("body").clientWidth;
+
+function nextParagraph() {
+    let firstParagraph = document.querySelector(".sliderItem");
+    firstParagraph.style.marginLeft = `-${ww}px`;
+    setTimeout(function () {
+        let firstSliderItemText = firstParagraph.textContent;
+        let newParagraph = document.createElement("span");
+        newParagraph.classList.add("sliderItem", "longTransition", "text-white", "fw-bolder", "w-100", "h-100", "d-inline-block");
+        newParagraph.textContent = firstSliderItemText;
+        firstParagraph.remove();
+        SLIDER.appendChild(newParagraph);
+    }, 500);
+}
+
+// setInterval(nextParagraph, 10000);
+
+SLIDERRIGHTBTN.addEventListener("click", nextParagraph);
+
+SLIDERLEFTBTN.addEventListener("click", function () {
+    let lastLeftParagraph = document.querySelectorAll(".sliderItem")[document.querySelectorAll(".sliderItem").length - 1];
+    let lastLeftSliderItemText = lastLeftParagraph.textContent;
+    let newLeftParagraph = document.createElement("span");
+    newLeftParagraph.classList.add("sliderItem", "longTransition", "text-white", "fw-bolder", "w-100", "h-100", "d-inline-block");
+    newLeftParagraph.textContent = lastLeftSliderItemText;
+    newLeftParagraph.style.marginLeft = `-${ww}px`;
+    lastLeftParagraph.remove();
+    let firstLeftParagraph = document.querySelector(".sliderItem");
+    SLIDER.insertBefore(newLeftParagraph, firstLeftParagraph);
+    setTimeout(function () {
+        newLeftParagraph.style.marginLeft = `0px`;
+    }, 500);
+});
