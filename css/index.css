@@ -304,15 +304,16 @@ footer */
 }
 
 /* Slider */
-.sliderItemLocation{
-    left: 0 !important;
-    right: 0 !important;
+.sliderContainers {
+    white-space: nowrap !important;
 }
-.sliderBTN{
-    height: fit-content !important;
-    position: absolute;
+
+.sliderItems {
+    margin-right: -4px !important;
+}
+
+.sliderIcon {
     top: 50%;
-    z-index: 1 !important;
 }
 
 /* xsm & sm & md */
@@ -370,6 +371,38 @@ footer */
     .margin-bottom {
         margin-bottom: 20px !important;
     }
+
+    /* Slider */
+    .sliderBackgroundImage {
+        background-image: url("../images/smBackgroundImageSlider.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sliderItemsSMBackground {
+        background-color: rgba(48, 48, 48, 0.68);
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .sliderItemTextSM {
+        width: 80%;
+        padding: 25px 5px;
+        white-space: normal !important;
+        color: white;
+        text-align: center;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .sliderSMIconSize {
+        font-size: xx-large;
+        opacity: 75%;
+    }
+
+    .sliderSMIconSize:hover {
+        opacity: 1;
+    }
 }
 
 @media all and (min-width:768px) {
@@ -416,5 +449,49 @@ footer */
     /* part four */
     .margin-start {
         margin-left: 52px !important;
+    }
+
+    /* Slider */
+    .sliderItemTextMD {
+        width: 50%;
+        color: black;
+        white-space: normal !important;
+        border-top-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+        background-color: whitesmoke;
+        padding: 0 50px;
+    }
+
+    .sliderItemsMDBackground {
+        background-image: url("../images/smBackgroundImageSlider.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sliderMDIconSize {
+        color: black;
+        font-size: 35px;
+        opacity: 50%;
+    }
+
+    .sliderMDIconSize:hover {
+        opacity: 1;
+    }
+
+    .sliderNav {
+        top: 95%;
+        left: 55%;
+        transform: translateX(-50%);
+    }
+
+    .sliderNavItem {
+        width: 15px;
+        height: 15px;
+        background-color: white;
+    }
+
+    .sliderNavItemHover {
+        background-color: rgb(228, 155, 15);
+        width: 30px;
     }
 }

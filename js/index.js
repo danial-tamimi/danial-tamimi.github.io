@@ -116,39 +116,41 @@ THERAPIESMENUMD.addEventListener("click", function () {
 });
 
 // Slider
-const SLIDERRIGHTBTN = document.querySelector(".sliderRightBTN");
-const SLIDERLEFTBTN = document.querySelector(".sliderLeftBTN");
-const SLIDER = document.querySelector(".slider_containers");
+const SLIDERNEXTBTN = document.querySelector(".sliderNext");
+const SLIDERPREVIOUSBTN = document.querySelector(".sliderPrevious");
+const FIRSTSLIDERITEM = document.querySelector(".firstSliderItem");
 let ww = document.querySelector("body").clientWidth;
+let activeSliderItem = 0;
+const SLIDERNAVITEM = document.querySelectorAll(".sliderNavItem");
 
-function nextParagraph() {
-    let firstParagraph = document.querySelector(".sliderItem");
-    firstParagraph.style.marginLeft = `-${ww}px`;
-    setTimeout(function () {
-        let firstSliderItemText = firstParagraph.textContent;
-        let newParagraph = document.createElement("span");
-        newParagraph.classList.add("sliderItem", "longTransition", "text-white", "fw-bolder", "w-100", "h-100", "d-inline-block");
-        newParagraph.textContent = firstSliderItemText;
-        firstParagraph.remove();
-        SLIDER.appendChild(newParagraph);
-    }, 500);
+function nextSliderItem() {
+    activeSliderItem++;
+    if (activeSliderItem == 5) {
+        activeSliderItem = 0;
+    }
+    SLIDERNAVITEM[activeSliderItem].classList.add("sliderNavItemHover");
+    let previousSliderNavItem = activeSliderItem - 1;
+    if (previousSliderNavItem == -1) {
+        previousSliderNavItem = 4;
+    }
+    SLIDERNAVITEM[previousSliderNavItem].classList.remove("sliderNavItemHover");
+    FIRSTSLIDERITEM.style.marginLeft = `-${ww * activeSliderItem}px`;
 }
 
-// setInterval(nextParagraph, 10000);
+setInterval(nextSliderItem, 10000);
 
-SLIDERRIGHTBTN.addEventListener("click", nextParagraph);
+SLIDERNEXTBTN.addEventListener("click", nextSliderItem);
 
-SLIDERLEFTBTN.addEventListener("click", function () {
-    let lastLeftParagraph = document.querySelectorAll(".sliderItem")[document.querySelectorAll(".sliderItem").length - 1];
-    let lastLeftSliderItemText = lastLeftParagraph.textContent;
-    let newLeftParagraph = document.createElement("span");
-    newLeftParagraph.classList.add("sliderItem", "longTransition", "text-white", "fw-bolder", "w-100", "h-100", "d-inline-block");
-    newLeftParagraph.textContent = lastLeftSliderItemText;
-    newLeftParagraph.style.marginLeft = `-${ww}px`;
-    lastLeftParagraph.remove();
-    let firstLeftParagraph = document.querySelector(".sliderItem");
-    SLIDER.insertBefore(newLeftParagraph, firstLeftParagraph);
-    setTimeout(function () {
-        newLeftParagraph.style.marginLeft = `0px`;
-    }, 500);
+SLIDERPREVIOUSBTN.addEventListener("click", function () {
+    activeSliderItem--;
+    if (activeSliderItem == -1) {
+        activeSliderItem = 4;
+    }
+    let nextSliderNavItem = activeSliderItem + 1;
+    FIRSTSLIDERITEM.style.marginLeft = `-${ww * activeSliderItem}px`;
+    SLIDERNAVITEM[activeSliderItem].classList.add("sliderNavItemHover");
+    if (nextSliderNavItem == 5) {
+        nextSliderNavItem = 0
+    }
+    SLIDERNAVITEM[nextSliderNavItem].classList.remove("sliderNavItemHover");
 });
