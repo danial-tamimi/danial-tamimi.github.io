@@ -6,6 +6,14 @@ html {
     width: 0 !important;
 }
 
+.zminuse1 {
+    z-index: -1 !important;
+}
+
+.fsColorOrange {
+    color: rgb(228, 155, 15);
+}
+
 .w-70 {
     width: 70% !important;
 }
@@ -128,8 +136,12 @@ html {
     cursor: pointer !important;
 }
 
-.fsPartOne {
-    font-size: calc(55px + 2.5vw) !important;
+.fsPartOneSmall {
+    font-size: calc(15px + 1.2vw) !important;
+}
+
+.fsPartOneBig {
+    font-size: calc(32px + 1.5vw) !important;
 }
 
 .specialcolorGreen {
@@ -157,6 +169,10 @@ part seven : FQS
 part 8 : forum -> name. last name. email. number . request day . textbox 
 part 9: contact us -> number email
 footer */
+
+.test55{
+    line-height: 50vh;
+}
 
 .fsHandWriting {
     font-family: 'Clicker Script', cursive;
@@ -316,6 +332,11 @@ footer */
     top: 50%;
 }
 
+/* part Eight */
+.test {
+    width: 75px;
+}
+
 /* xsm & sm & md */
 @media all and (max-width:767.5px) {
 
@@ -363,6 +384,13 @@ footer */
         width: 75%;
     }
 
+    /* Part Two */
+    .partTwoBackGround {
+        background-image: url("../images/Amelia.png");
+        background-position: center;
+        background-size: cover;
+    }
+
     /* Part Four */
     .margin-top {
         margin-top: 20px !important;
@@ -403,9 +431,24 @@ footer */
     .sliderSMIconSize:hover {
         opacity: 1;
     }
+
+    /* Part seven */
+    .partSevenBackGround {
+        background-image: url("../images/aboutAmelia.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* Part eight */
+    .partEightSMItem {
+        margin-bottom: 35px;
+    }
 }
 
 @media all and (min-width:768px) {
+    .opacity-md-none{
+        background-color: white !important;
+    }
 
     /* Navigation */
     .position-md-fixed {
@@ -441,6 +484,21 @@ footer */
         transform: scaleY(1) !important;
     }
 
+    /* part two */
+    .partTwoMD {
+        height: 108vh !important;
+    }
+
+    .partTwoMDImage {
+        background-image: url("../images/Amelia.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .partTwoMDItem {
+        margin-top: 0 !important;
+    }
+
     /* part Three */
     .marginPartThreeBottom {
         margin-bottom: 56px !important;
@@ -448,7 +506,7 @@ footer */
 
     /* part four */
     .margin-start {
-        margin-left: 52px !important;
+        margin-right: 52px !important;
     }
 
     /* Slider */
@@ -456,8 +514,8 @@ footer */
         width: 50%;
         color: black;
         white-space: normal !important;
-        border-top-left-radius: 150px;
-        border-bottom-right-radius: 150px;
+        border-top-left-radius: 280px;
+        border-bottom-right-radius: 280px;
         background-color: whitesmoke;
         padding: 0 50px;
     }
@@ -493,5 +551,22 @@ footer */
     .sliderNavItemHover {
         background-color: rgb(228, 155, 15);
         width: 30px;
+    }
+
+    /* partseven */
+    .partSevenImage {
+        background-image: url("../images/aboutAmelia.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* partEight */
+    .partEightMDItem {
+        width: 28% !important;
+        margin-bottom: 35px;
+    }
+
+    .partEightMotherSize {
+        height: 100vh;
     }
 }
