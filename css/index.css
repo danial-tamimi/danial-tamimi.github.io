@@ -148,6 +148,10 @@ html {
     color: rgba(0, 60, 0, 1) !important;
 }
 
+.w-fitContent{
+    width: fit-content !important;
+}
+
 /* orange #D7B377 */
 
 /* Blue #8AA29E  */
@@ -184,6 +188,9 @@ footer */
     transition: all 300ms ease 0s;
 }
 
+.specialColorBlue{
+    color: rgba(110, 142, 139, 1) !important;
+}
 .longTransition {
     -moz-transition: all 500ms ease 0s;
     -webkit-transition: all 500ms ease 0s;
@@ -337,6 +344,10 @@ footer */
     width: 75px;
 }
 
+/* Footer */
+.footerLogoSize{
+    width: 60px;
+}
 /* xsm & sm & md */
 @media all and (max-width:767.5px) {
 
@@ -568,5 +579,27 @@ footer */
 
     .partEightMotherSize {
         height: 100vh;
+    }
+
+    /* Footer */
+    .footerMargin{
+        margin: 0 !important;
+    }
+
+    .footerItemCenter{
+        text-align: center;
+    }
+
+    .footerMotherMarginTop{
+        margin-top: 50px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .footerHMarginTop{
+        margin-top: 40px !important;
+    }
+
+    .footerAMarginTop{
+        margin-top: 25px !important;
     }
 }
