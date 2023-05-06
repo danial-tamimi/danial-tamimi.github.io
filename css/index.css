@@ -148,7 +148,7 @@ html {
     color: rgba(0, 60, 0, 1) !important;
 }
 
-.w-fitContent{
+.w-fitContent {
     width: fit-content !important;
 }
 
@@ -174,7 +174,7 @@ part 8 : forum -> name. last name. email. number . request day . textbox
 part 9: contact us -> number email
 footer */
 
-.test55{
+.test55 {
     line-height: 50vh;
 }
 
@@ -188,9 +188,10 @@ footer */
     transition: all 300ms ease 0s;
 }
 
-.specialColorBlue{
+.specialColorBlue {
     color: rgba(110, 142, 139, 1) !important;
 }
+
 .longTransition {
     -moz-transition: all 500ms ease 0s;
     -webkit-transition: all 500ms ease 0s;
@@ -269,6 +270,22 @@ footer */
     transform: scaleX(1);
 }
 
+/* StartAgain */
+.startAgain {
+    background-color: rgb(228, 155, 15) !important;
+    width: 50px;
+    height: 50px;
+    right: 2%;
+    top: 90%;
+    z-index: 2;
+}
+
+/* pre-loading page */
+.preLoadingPageBG {
+    background-color: rgba(110, 142, 139, 0.5) !important;
+    z-index: 4;
+}
+
 /* Part Three */
 .designHPartThreehover {
     -moz-transform: scale(1.3);
@@ -345,9 +362,42 @@ footer */
 }
 
 /* Footer */
-.footerLogoSize{
+.footerLogoSize {
     width: 60px;
 }
+
+/* Scroll Effect */
+.hiddenScrollEffect {
+    opacity: 0 !important;
+    -moz-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -moz-transition: all 1.5s ease-in-out 0s;
+    -webkit-transition: all 1.5s ease-in-out 0s;
+    transition: all 1.5s ease-in-out 0s;
+}
+
+.showScrollEffect {
+    opacity: 1 !important;
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hiddenScrollEffect {
+        -moz-transition: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+
 /* xsm & sm & md */
 @media all and (max-width:767.5px) {
 
@@ -376,7 +426,7 @@ footer */
 
     .subMenuPositionsm {
         position: fixed !important;
-        z-index: 2 !important;
+        z-index: 3 !important;
     }
 
     .closeSubMenu {
@@ -393,6 +443,12 @@ footer */
 
     .wmenuxs {
         width: 75%;
+    }
+
+    /* pre-loading page */
+    .preLoadingPageSize {
+        width: 65%;
+        height: 50%;
     }
 
     /* Part Two */
@@ -457,7 +513,7 @@ footer */
 }
 
 @media all and (min-width:768px) {
-    .opacity-md-none{
+    .opacity-md-none {
         background-color: white !important;
     }
 
@@ -493,6 +549,12 @@ footer */
         -moz-transform: scaleY(1) !important;
         -webkit-transform: scaleY(1) !important;
         transform: scaleY(1) !important;
+    }
+
+    /* pre-loading Page */
+    .preLoadingPageSize {
+        width: 400px;
+        height: 350px;
     }
 
     /* part two */
@@ -582,24 +644,24 @@ footer */
     }
 
     /* Footer */
-    .footerMargin{
+    .footerMargin {
         margin: 0 !important;
     }
 
-    .footerItemCenter{
+    .footerItemCenter {
         text-align: center;
     }
 
-    .footerMotherMarginTop{
+    .footerMotherMarginTop {
         margin-top: 50px !important;
         margin-bottom: 25px !important;
     }
 
-    .footerHMarginTop{
+    .footerHMarginTop {
         margin-top: 40px !important;
     }
 
-    .footerAMarginTop{
+    .footerAMarginTop {
         margin-top: 25px !important;
     }
 }

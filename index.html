@@ -47,7 +47,7 @@
     <div class="container-fluid">
         <!-- Start Navigation -->
         <div
-            class="row w-100 d-md-flex align-items-md-center justify-content-md-between position-md-fixed NavBackGroundColorBlue">
+            class="row w-100 d-md-flex align-items-md-center justify-content-md-between position-md-fixed motherNavBg longTransition">
             <div
                 class="col-12 d-flex flex-column align-items-end d-md-flex flex-md-row justify-content-md-between align-items-md-center p-0">
                 <div class="d-flex justify-content-between align-items-center py-3 px-sm navPositionsm navsizexs">
@@ -65,13 +65,13 @@
                 <div class="w-70 h-100 d-none d-md-flex justify-content-md-center align-items-md-center">
                     <!-- Menu MD -->
                     <ul
-                        class="list-unstyled mb-0 w-100 h-100 d-flex justify-content-around align-items-center backGroundColorGray designMenu py-1">
+                        class="list-unstyled mb-0 w-100 h-100 d-flex justify-content-around align-items-center subMenuBg designMenu py-1 longTransition">
                         <li class="d-flex justify-content-center align-items-center h-100"><a href="index.html"
-                                class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-black fw-bold generalffsanseri btmBorderHoverOrange"
+                                class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri btmBorderHoverOrange menuMDNewColor"
                                 title="HOME">home</a></li>
                         <li
                             class="d-flex justify-content-center position-relative align-items-stretch h-100 px-2 py-2 motherSubMenumdRetreat">
-                            <a class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-black fw-bold generalffsanseri pointer btmBorderHoverOrange"
+                            <a class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri pointer btmBorderHoverOrange menuMDNewColor"
                                 title="RETREAT & HEAL">retreat & heal<i
                                     class="bi bi-chevron-down fs-6 ps-2 chevronSubMenumdRetreat"></i></a>
                             <!-- Menu Retreat -->
@@ -108,7 +108,7 @@
                         </li>
                         <li
                             class="d-flex justify-content-center align-items-center h-100 position-relative motherSubMenumdTherapies">
-                            <a class="text-decoration-none py-1 me-2 position-relative generalTransition text-uppercase text-black fw-bold generalffsanseri pointer btmBorderHoverOrange"
+                            <a class="text-decoration-none py-1 me-2 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri pointer btmBorderHoverOrange menuMDNewColor"
                                 title="THERAPIES">therapies<i
                                     class="bi bi-chevron-down fs-6 ps-2 chevronSubMenumdTherapies"></i></a>
                             <!-- Therapies MenuMD -->
@@ -129,11 +129,11 @@
                             </ul>
                         </li>
                         <li class="d-flex justify-content-center align-items-center h-100"><a href="pages/aboutus.html"
-                                class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-black me-2 fw-bold generalffsanseri btmBorderHoverOrange"
+                                class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-white me-2 fw-bold generalffsanseri btmBorderHoverOrange menuMDNewColor"
                                 title="ABOUT US">about us</a></li>
                         <li class="d-flex justify-content-center align-items-center h-100"><a
                                 href="pages/contactus.html"
-                                class="text-decoration-none py-1 pe-2 position-relative generalTransition text-uppercase text-black fw-bold generalffsanseri btmBorderHoverOrange"
+                                class="text-decoration-none py-1 pe-2 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri btmBorderHoverOrange menuMDNewColor"
                                 title="CONTACT US">contact us</a></li>
                     </ul>
                 </div>
@@ -226,6 +226,24 @@
                 </div>
             </div>
         </div>
+        <!-- Button for come first again -->
+        <div class="row d-flex justify-content-md-end align-items-md-center">
+            <div
+                class="col-12 d-flex flex-column justify-content-center align-items-center p-0 position-fixed rounded-pill opacity-0 startAgain longTransition">
+                <a href="#"
+                    class="w-100 h-100 d-block d-flex flex-column justify-content-center align-items-center fs-3 text-white fw-bolder rounded-pill"><i
+                        class="bi bi-chevron-up"></i></a>
+            </div>
+        </div>
+        <!-- Pre loading Page -->
+        <div class="row w-100 height-100 d-flex justify-content-center align-items-center position-fixed preLoadingPageBG closePreLoadingPage">
+            <div class="col-12 bg-white d-flex flex-column align-items-center rounded-2 preLoadingPageSize">
+                <div class="d-flex justify-content-end align-items-center w-100 mb-4"><i class="bi fs-2 bi-x-lg pointer closePreLoadingPageIcon"></i></div>
+                <img src="images/animaSanaLogo.png" class="d-block footerLogoSize mb-4" alt="">
+                <h3 class="fsSerif fw-bolder mb-2">Anima Sana</h3>
+                <span class="text-center fw-light generalffsanserif">We are here to help you see a different side of life</span>
+            </div>
+        </div>
         <!-- Part one -->
         <div class="row d-flex flex-column justify-content-center align-items-center partoneBackGround height-100">
             <div
@@ -243,10 +261,11 @@
             </div>
         </div>
         <!-- Part two -->
-        <div class="row height-100 partTwoBackGround">
+        <div class="row height-100 partTwoBackGround mamad">
             <div
                 class="col-12 d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between w-100 h-100 px-0 bg-dark bg-opacity-25 opacity-md-none">
-                <div class="d-flex flex-column justify-content-evenly align-items-center w-85 h-75 rounded-2 bg-white">
+                <div
+                    class="d-flex flex-column justify-content-evenly align-items-center w-85 h-75 rounded-2 bg-white hiddenScrollEffect">
                     <h3 class="fsSerif fw-bolder text-center">Anima Sana</h3>
                     <p class="px-3 fw-light generalffsanserif">Amelia Simpson, BSc, MSc, PgD, is the founder of Amina
                         Sana and is
@@ -273,7 +292,7 @@
                 <h2 class="text-white fw-bolder mt-4 fsSerif">Therapies</h2>
             </div>
             <div
-                class="col-10 col-sm-8 col-md-4 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center">
+                class="col-10 col-sm-8 col-md-4 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center hiddenScrollEffect">
                 <div
                     class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree">
                     <img class="d-inline-block w-100 designImagePartThree generalTransition" src="images/partThree1.jpg"
@@ -293,7 +312,7 @@
                 </a>
             </div>
             <div
-                class="col-10 col-sm-8 col-md-4 offset-md-1 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center">
+                class="col-10 col-sm-8 col-md-4 offset-md-1 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center hiddenScrollEffect">
                 <div
                     class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree">
                     <img class="d-inline-block w-100 designImagePartThree generalTransition" src="images/partThree2.jpg"
@@ -313,7 +332,7 @@
                 </a>
             </div>
             <div
-                class="col-10 col-sm-8 col-md-4 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center marginPartThreeBottom">
+                class="col-10 col-sm-8 col-md-4 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center marginPartThreeBottom hiddenScrollEffect">
                 <div
                     class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree">
                     <img class="d-inline-block w-100 designImagePartThree generalTransition" src="images/partThree3.jpg"
@@ -333,7 +352,7 @@
                 </a>
             </div>
             <div
-                class="col-10 col-sm-8 col-md-4 offset-md-1 bg-white rounded-4 px-0 mt-5 mb-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center marginPartThreeBottom">
+                class="col-10 col-sm-8 col-md-4 offset-md-1 bg-white rounded-4 px-0 mt-5 mb-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center marginPartThreeBottom hiddenScrollEffect">
                 <div
                     class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree">
                     <img class="d-inline-block w-100 designImagePartThree generalTransition" src="images/partThree4.jpg"
@@ -395,7 +414,7 @@
         <div
             class="row d-flex justify-content-center align-items-center justify-content-md-end partFourBackGround height-100">
             <div
-                class="col-10 col-md-6 px-3 d-flex flex-column justify-content-around align-items-center rounded-2 h-80 bg-white margin-start">
+                class="col-10 col-md-6 px-3 d-flex flex-column justify-content-around align-items-center rounded-2 h-80 bg-white margin-start hiddenScrollEffect">
                 <h3 class="text-center fw-bolder fsSerif">Treatment package</h3>
                 <p class="generalffsanserif">Our intensive therapy retreats are based on the most current scientific
                     understanding of adult mental
@@ -408,6 +427,58 @@
                             class="bi bi-chevron-right generalTransition"></i>
                     </span>
                 </a>
+            </div>
+        </div>
+        <!-- How We can Help -->
+        <div class="row partEightMotherSize backGroundColorMilky">
+            <div class="col-12">
+                <h5 class="w-100 text-center fw-bold fsSerif my-5">How Anima Sana can help me?</h5>
+                <div class="d-md-flex flex-md-row justify-content-md-evenly align-items-md-center">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
+                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
+                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
+                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
+                            and share them with others.</p>
+                    </div>
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
+                        <img src="images/progress.png" class="test d-block mb-3" alt="">
+                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Renewed Clarity</span>
+                        <p class="text-center generalffsanserif fs-5 fw-light">Gain a stronger sense of purpose and
+                            direction in your life.</p>
+                    </div>
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
+                        <img src="images/happines.png" class="test d-block mb-3" alt="">
+                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Unburden Yourself</span>
+                        <p class="text-center generalffsanserif fs-5 fw-light">Heal your unprocessed trauma and put it
+                            to rest once and for all.</p>
+                    </div>
+                </div>
+                <div class="d-md-flex flex-md-row justify-content-md-evenly align-items-md-center">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
+                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
+                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
+                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
+                            and share them with others.</p>
+                    </div>
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
+                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
+                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
+                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
+                            and share them with others.</p>
+                    </div>
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
+                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
+                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
+                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
+                            and share them with others.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Slider -->
@@ -496,7 +567,8 @@
         <div class="row height-100 partSevenBackGround">
             <div
                 class="col-12 d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between w-100 h-100 px-0 bg-dark bg-opacity-25 opacity-md-none">
-                <div class="d-flex flex-column justify-content-evenly align-items-center w-85 h-75 rounded-2 bg-white">
+                <div
+                    class="d-flex flex-column justify-content-evenly align-items-center w-85 h-75 rounded-2 bg-white hiddenScrollEffect">
                     <span class="fst-italic fs-5 fsSerif">About</span>
                     <h3 class="fsSerif fw-bolder text-center">Amelia Simpson</h3>
                     <p class="px-3 fw-light generalffsanserif">Amelia Simpson, BSc, MSc, PgD, is the founder of Amina
@@ -517,58 +589,6 @@
                 </div>
             </div>
         </div>
-        <!-- Part Eight -->
-        <div class="row partEightMotherSize backGroundColorMilky">
-            <div class="col-12">
-                <h5 class="w-100 text-center fw-bold fsSerif my-5">How Anima Sana can help me?</h5>
-                <div class="d-md-flex flex-md-row justify-content-md-evenly align-items-md-center">
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem">
-                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
-                            and share them with others.</p>
-                    </div>
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem">
-                        <img src="images/progress.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Renewed Clarity</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Gain a stronger sense of purpose and
-                            direction in your life.</p>
-                    </div>
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem">
-                        <img src="images/happines.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Unburden Yourself</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Heal your unprocessed trauma and put it
-                            to rest once and for all.</p>
-                    </div>
-                </div>
-                <div class="d-md-flex flex-md-row justify-content-md-evenly align-items-md-center">
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem">
-                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
-                            and share them with others.</p>
-                    </div>
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem">
-                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
-                            and share them with others.</p>
-                    </div>
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem">
-                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
-                            and share them with others.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Part Nine -->
         <div class="row height-100">
             <div class="col-12 w-100 h-100 d-flex justify-content-center align-content-center"><span
@@ -576,22 +596,35 @@
         </div>
         <!-- Footer -->
         <div class="row bg-dark">
-            <div class="col-12 col-md-4 d-flex flex-column justify-content-evenly mb-4 mt-5 footerMargin justify-content-md-start align-items-md-center footerHMarginTop">
+            <div
+                class="col-12 col-md-4 d-flex flex-column justify-content-evenly mb-4 mt-5 footerMargin justify-content-md-start align-items-md-center footerHMarginTop">
                 <h2 class="specialColorBlue text-capitalize mb-3 fsSerif footerMargin">retreat & heal</h2>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop" href="pages/experience.html">What does this experience entail?</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop" href="pages/benefitsretreat.html">What are the benefits of an intensive retreat?</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop" href="pages/accomplish.html">What can I expect to accomplish?</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop" href="pages/ourhelp.html">What we help with?</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop" href="pages/pricing.html">Pricing & FAQ's</a>
+                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+                    href="pages/experience.html">What does this experience entail?</a>
+                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+                    href="pages/benefitsretreat.html">What are the benefits of an intensive retreat?</a>
+                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+                    href="pages/accomplish.html">What can I expect to accomplish?</a>
+                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+                    href="pages/ourhelp.html">What we help with?</a>
+                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+                    href="pages/pricing.html">Pricing & FAQ's</a>
             </div>
-            <div class="col-12 col-md-4 d-flex flex-column justify-content-evenly justify-content-md-start align-items-md-center mb-4 footerMargin footerHMarginTop">
+            <div
+                class="col-12 col-md-4 d-flex flex-column justify-content-evenly justify-content-md-start align-items-md-center mb-4 footerMargin footerHMarginTop">
                 <h2 class="specialColorBlue text-capitalize mb-3 fsSerif footerMargin">therapies</h2>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop" href="pages/emdr.html">EMDR</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop" href="pages/breathwork.html">Breathwork</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop" href="pages/trauma.html">Trauma</a>
+                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop"
+                    href="pages/emdr.html">EMDR</a>
+                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop"
+                    href="pages/breathwork.html">Breathwork</a>
+                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop"
+                    href="pages/trauma.html">Trauma</a>
             </div>
-            <div class="col-12 col-md-4 d-flex flex-column justify-content-evenly mb-5 footerMargin align-items-md-center justify-content-md-start footerHMarginTop">
-                <a href="pages/contactus.html" class="specialColorBlue text-capitalize w-fitContent h2 text-decoration-none fsSerif footerMargin">contact us</a>
+            <div
+                class="col-12 col-md-4 d-flex flex-column justify-content-evenly mb-5 footerMargin align-items-md-center justify-content-md-start footerHMarginTop">
+                <a href="pages/contactus.html"
+                    class="specialColorBlue text-capitalize w-fitContent h2 text-decoration-none fsSerif footerMargin">contact
+                    us</a>
                 <span class="text-white specialColorOrange generalTransition footerAMarginTop">Example@gmail.com</span>
             </div>
             <div class="col-12 d-flex flex-column justify-content-evenly align-items-center mt-3 footerMotherMarginTop">

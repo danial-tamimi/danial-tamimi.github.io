@@ -154,3 +154,50 @@ SLIDERPREVIOUSBTN.addEventListener("click", function () {
     }
     SLIDERNAVITEM[nextSliderNavItem].classList.remove("sliderNavItemHover");
 });
+
+// Scroll Effect
+const OBSERVER = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("showScrollEffect");
+        } else {
+            entry.target.classList.remove("showScrollEffect")
+        }
+    });
+});
+const HIDDENELEMENTS = document.querySelectorAll(".hiddenScrollEffect");
+HIDDENELEMENTS.forEach((el) => OBSERVER.observe(el));
+
+// Navigation Effect
+let motherNavBg = document.querySelector(".motherNavBg");
+let subMenuBg = document.querySelector(".subMenuBg");
+let startAgain = document.querySelector(".startAgain");
+let menuMDNewColor = document.querySelectorAll(".menuMDNewColor");
+window.addEventListener('scroll', function () {
+    if (this.document.documentElement.scrollTop > 100) {
+        motherNavBg.classList.add("NavBackGroundColorBlue");
+        subMenuBg.classList.add("backGroundColorGray");
+        startAgain.classList.remove("opacity-0");
+        startAgain.classList.add("opacity-1");
+        for (let i = 0; i <= 5; i++) {
+            menuMDNewColor[i].classList.remove("text-white");
+            menuMDNewColor[i].classList.add("submenuColorA");
+        }
+    }
+    else {
+        motherNavBg.classList.remove("NavBackGroundColorBlue");
+        subMenuBg.classList.remove("backGroundColorGray");
+        startAgain.classList.remove("opacity-1");
+        startAgain.classList.add("opacity-0");
+        for (let i = 0; i <= 5; i++) {
+            menuMDNewColor[i].classList.add("text-white");
+            menuMDNewColor[i].classList.remove("submenuColorA");
+        }
+    }
+});
+// pre-loading Page
+let closePreLoadingPage = document.querySelector(".closePreLoadingPage");
+let closePreLoadingPageIcon = document.querySelector(".closePreLoadingPageIcon");
+closePreLoadingPageIcon.addEventListener("click", function () {
+    closePreLoadingPage.classList.add("d-none");
+});
