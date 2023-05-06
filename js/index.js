@@ -122,7 +122,7 @@ const FIRSTSLIDERITEM = document.querySelector(".firstSliderItem");
 let ww = document.querySelector("body").clientWidth;
 let activeSliderItem = 0;
 const SLIDERNAVITEM = document.querySelectorAll(".sliderNavItem");
-
+console.log(SLIDERNAVITEM);
 function nextSliderItem() {
     activeSliderItem++;
     if (activeSliderItem == 5) {

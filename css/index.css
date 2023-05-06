@@ -209,11 +209,6 @@ footer */
 }
 
 /* part one */
-.partoneBackGround {
-    background-image: url("../images/mainBackGround.jpg");
-    background-position: center;
-    background-size: cover;
-}
 
 .btmBorderHoverOrange:hover {
     color: rgb(88, 118, 115) !important;
@@ -451,6 +446,12 @@ footer */
         height: 50%;
     }
 
+    /* Part one */
+    .partoneBackGround {
+        background-image: url("../images/mainBackGround.jpg");
+        background-position: center;
+        background-size: cover;
+    }
     /* Part Two */
     .partTwoBackGround {
         background-image: url("../images/Amelia.png");
@@ -557,6 +558,12 @@ footer */
         height: 350px;
     }
 
+    /* Part one */
+    .partoneBackGround {
+        background-image: url("../images/mainBackGround2.jpeg");
+        background-position: center;
+        background-size: cover;
+    }
     /* part two */
     .partTwoMD {
         height: 108vh !important;
