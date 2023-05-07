@@ -403,6 +403,8 @@ footer */
 
     .navsizexs {
         width: 100% !important;
+        right: 0 !important;
+        left: 0 !important;
     }
 
     .menu-design {
@@ -419,6 +421,10 @@ footer */
         z-index: 1 !important;
     }
 
+    .navXSBg {
+        background-color: rgba(110, 142, 139, 0.75) !important;
+    }
+
     .subMenuPositionsm {
         position: fixed !important;
         z-index: 3 !important;
@@ -433,7 +439,8 @@ footer */
     }
 
     .px-sm {
-        padding-left: 45px;
+        padding-left: 15px;
+        padding-right: 25px;
     }
 
     .wmenuxs {
@@ -452,6 +459,7 @@ footer */
         background-position: center;
         background-size: cover;
     }
+
     /* Part Two */
     .partTwoBackGround {
         background-image: url("../images/Amelia.png");
@@ -564,6 +572,7 @@ footer */
         background-position: center;
         background-size: cover;
     }
+
     /* part two */
     .partTwoMD {
         height: 108vh !important;

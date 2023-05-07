@@ -173,12 +173,14 @@ let motherNavBg = document.querySelector(".motherNavBg");
 let subMenuBg = document.querySelector(".subMenuBg");
 let startAgain = document.querySelector(".startAgain");
 let menuMDNewColor = document.querySelectorAll(".menuMDNewColor");
+let navXSBgScroll = document.querySelector(".navXSBgScroll");
 window.addEventListener('scroll', function () {
     if (this.document.documentElement.scrollTop > 100) {
         motherNavBg.classList.add("NavBackGroundColorBlue");
         subMenuBg.classList.add("backGroundColorGray");
         startAgain.classList.remove("opacity-0");
         startAgain.classList.add("opacity-1");
+        navXSBgScroll.classList.add("navXSBg");
         for (let i = 0; i <= 5; i++) {
             menuMDNewColor[i].classList.remove("text-white");
             menuMDNewColor[i].classList.add("submenuColorA");
@@ -189,6 +191,7 @@ window.addEventListener('scroll', function () {
         subMenuBg.classList.remove("backGroundColorGray");
         startAgain.classList.remove("opacity-1");
         startAgain.classList.add("opacity-0");
+        navXSBgScroll.classList.remove("navXSBg");
         for (let i = 0; i <= 5; i++) {
             menuMDNewColor[i].classList.add("text-white");
             menuMDNewColor[i].classList.remove("submenuColorA");
