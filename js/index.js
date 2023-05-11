@@ -160,8 +160,6 @@ const OBSERVER = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add("showScrollEffect");
-        } else {
-            entry.target.classList.remove("showScrollEffect")
         }
     });
 });
@@ -201,6 +199,14 @@ window.addEventListener('scroll', function () {
 // pre-loading Page
 let closePreLoadingPage = document.querySelector(".closePreLoadingPage");
 let closePreLoadingPageIcon = document.querySelector(".closePreLoadingPageIcon");
+let preLoadingPage = document.querySelector(".preLoadingPage");
 closePreLoadingPageIcon.addEventListener("click", function () {
     closePreLoadingPage.classList.add("d-none");
+});
+
+window.addEventListener("load", function () {
+    closePreLoadingPage.classList.add("opacity-1");
+    closePreLoadingPage.classList.remove("opacity-0");
+    preLoadingPage.classList.add("preLoadingAfterEffect");
+    preLoadingPage.classList.remove("preLoadingBeforeEffect");
 });
