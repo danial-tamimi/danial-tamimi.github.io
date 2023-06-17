@@ -6,6 +6,18 @@ html {
     width: 0 !important;
 }
 
+.w-5 {
+    width: 5% !important;
+}
+
+.h-10 {
+    height: 10% !important;
+}
+
+.w-46 {
+    width: 46% !important;
+}
+
 .zminuse1 {
     z-index: -1 !important;
 }
@@ -23,7 +35,7 @@ html {
 }
 
 .logoSize {
-    width: calc(35px + 2.6vw) !important;
+    width: calc(28px + 2.1vw) !important;
 }
 
 .w-85 {
@@ -104,10 +116,6 @@ html {
     font-family: 'Cinzel', serif !important;
 }
 
-.hoverMotherArrowDown:hover .hoverArrowDown {
-    margin-bottom: -10px !important;
-}
-
 .h-7 {
     height: 7% !important;
 }
@@ -174,10 +182,6 @@ part 8 : forum -> name. last name. email. number . request day . textbox
 part 9: contact us -> number email
 footer */
 
-.test55 {
-    line-height: 50vh;
-}
-
 .fsHandWriting {
     font-family: 'Clicker Script', cursive;
 }
@@ -208,6 +212,11 @@ footer */
     border-bottom-left-radius: 15px !important;
 }
 
+.SpecialGreenNavColor{
+    background: linear-gradient(to bottom, black, rgba(30, 89, 71, 255)) !important;
+    transition: all 1.5s ease-in-out 0s !important;
+}
+
 /* part one */
 
 .btmBorderHoverOrange:hover {
@@ -232,7 +241,7 @@ footer */
     width: 100%;
     height: 1.5px;
     border-radius: 5px;
-    background-color: rgb(88, 118, 115) !important;
+    background-color: rgb(228, 155, 15) !important;
     position: absolute;
     z-index: 1;
     top: 100%;
@@ -251,12 +260,11 @@ footer */
 }
 
 .submenuColorA {
-    color: rgb(228, 155, 15) !important;
+    color: whitesmoke !important;
 }
 
 .MenudesignHover:hover {
-    background-color: rgba(48, 48, 48, 1) !important;
-    color: rgba(110, 142, 139, 1) !important;
+    color: rgb(228, 155, 15) !important;
 }
 
 .btmBorderHoverOrange:hover::before {
@@ -265,15 +273,37 @@ footer */
     transform: scaleX(1);
 }
 
+
+@keyframes hoverArrowDown {
+    from {
+        margin-bottom: 25px;
+    }
+
+    to {
+        margin-bottom: -35px;
+    }
+}
+
+.animationArrowDown {
+    -moz-animation: hoverArrowDown 1.5s ease-in-out 0s infinite running !important;
+    -webkit-animation: hoverArrowDown 1.5s ease-in-out 0s infinite running !important;
+    animation: hoverArrowDown 1.5s ease-in-out 0s infinite running !important;
+}
+
+.animationArrowDown:hover{
+    margin-bottom: 0 !important;
+    transition: all 1.5s ease-in-out 0s !important;
+}
+
 /* StartAgain */
-.startAgain {
+/* .startAgain {
     background-color: rgb(228, 155, 15) !important;
     width: 50px;
     height: 50px;
     right: 2%;
     top: 90%;
     z-index: 2;
-}
+} */
 
 /* pre-loading page */
 .preLoadingPageBG {
@@ -439,10 +469,6 @@ footer */
         z-index: 1 !important;
     }
 
-    .navXSBg {
-        background-color: rgba(110, 142, 139, 0.75) !important;
-    }
-
     .subMenuPositionsm {
         position: fixed !important;
         z-index: 3 !important;
@@ -465,6 +491,10 @@ footer */
         width: 75%;
     }
 
+    .specialBackGroundColorGreen {
+        background: linear-gradient(to right bottom, black, rgba(30, 89, 71, 255)) !important;
+    }
+
     /* pre-loading page */
     .preLoadingPageSize {
         width: 65%;
@@ -476,6 +506,16 @@ footer */
         background-image: url("../images/mainBackGround.jpg");
         background-position: center;
         background-size: cover;
+    }
+
+    .designPartoneTextXS{
+        height: 100% !important;
+    }
+
+    .designPartoneArrowXS{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
     }
 
     /* Part Two */
@@ -539,6 +579,8 @@ footer */
     }
 }
 
+
+
 @media all and (min-width:768px) {
     .opacity-md-none {
         background-color: white !important;
@@ -550,8 +592,17 @@ footer */
         z-index: 2 !important;
     }
 
-    .wmenulg {
-        width: 15%;
+    .MDNavColor:hover {
+        color: rgb(228, 155, 15) !important;
+    }
+
+    .NavMdSize {
+        height: 15vh !important;
+    }
+
+    .NavSubMenuMDSize {
+        height: 90vh;
+        background-color: rgba(30, 89, 71, 255) !important;
     }
 
     .subMenumd {
@@ -578,6 +629,60 @@ footer */
         transform: scaleY(1) !important;
     }
 
+    .SubMenuMDLinks {
+        border-left: 0;
+    }
+
+    .SubMenuMDLinks:hover {
+        color: rgb(228, 155, 15) !important;
+        padding-left: 15px !important;
+        border-left: 5px solid white;
+    }
+
+    .retreatSubMenu {
+        -moz-transition: all 1s ease-in-out 0s !important;
+        -webkit-transition: all 1s ease-in-out 0s !important;
+        transition: all 1s ease-in-out 0s !important;
+    }
+
+    .retreatSubMenu:nth-child(2) {
+        transition-delay: 1s !important;
+    }
+
+    .retreatSubMenu:nth-child(3) {
+        transition-delay: 2s !important;
+    }
+
+    .retreatSubMenu:nth-child(4) {
+        transition-delay: 3s !important;
+    }
+
+    .retreatSubMenu:nth-child(5) {
+        transition-delay: 4s !important;
+    }
+
+    .showSubMenuMD {
+        opacity: 1 !important;
+    }
+
+    .therapySubMenu {
+        -moz-transition: all 1s ease-in-out 0s !important;
+        -webkit-transition: all 1s ease-in-out 0s !important;
+        transition: all 1s ease-in-out 0s !important;
+    }
+
+    .therapySubMenu:nth-child(2) {
+        transition-delay: 1s !important;
+    }
+
+    .therapySubMenu:nth-child(3) {
+        transition-delay: 2s !important;
+    }
+
+    .NavMDBGAfterClick{
+        background: linear-gradient(to bottom, black, rgba(30, 89, 71, 255)) !important;
+        transition: all 800ms ease-in-out 0s !important;
+    }
     /* pre-loading Page */
     .preLoadingPageSize {
         width: 400px;
@@ -589,6 +694,14 @@ footer */
         background-image: url("../images/mainBackGround2.jpeg");
         background-position: center;
         background-size: cover;
+    }
+
+    .designPartoneTextMD{
+        height: 75% !important;
+    }
+
+    .partoneBackGroundMother {
+        background: linear-gradient(to right bottom, black, rgba(30, 89, 71, 255)) !important;
     }
 
     /* part two */

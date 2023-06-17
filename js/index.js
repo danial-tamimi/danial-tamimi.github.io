@@ -15,7 +15,7 @@ closeMenu.addEventListener("click", function () {
 });
 // Retreat SubMenu XS
 const RETREATMENU = document.querySelector(".motherRetreatSubMenu");
-const RETREATSUBMENU = document.querySelector(".retreatSubMenu");
+const RETREATSUBMENU = document.querySelector(".retreatSubMenuXS");
 let retreatMenuChevron = document.querySelector(".retreatMenuChevron");
 RETREATMENU.addEventListener("click", function () {
     if (THERAPYSUBMENU.classList.contains("h-100")) {
@@ -64,55 +64,77 @@ THERAPYMENU.addEventListener("click", function () {
 });
 
 // Retreat SubMenu MD
-const RETREATMENUMD = document.querySelector(".motherSubMenumdRetreat");
-const RETREATSUBMENUMD = document.querySelector(".subMenumdRetreat");
-let retreatMenuMDChevron = document.querySelector(".chevronSubMenumdRetreat");
-RETREATMENUMD.addEventListener("click", function () {
-    if (THERAPIESSUBMENUMD.classList.contains("heightMenumdRetreat")) {
-        THERAPIESSUBMENUMD.classList.remove("heightMenumdRetreat");
-        therapiesMenuMDChevron.classList.add("bi-chevron-down");
-        therapiesMenuMDChevron.classList.remove("bi-chevron-up");
+const NAVIGATIONMOTHERMDBG = document.querySelector(".NavMDBGAfterClickSelect");
+const RETREATSUB = document.querySelector(".RetreatSubMenunew"), RETREATMDCHEVRON = document.querySelector(".chevronSubMenumdRetreat");
+const RETREATMENUMOTHER = document.querySelector(".motherSubMenumdRetreat");
+RETREATMENUMOTHER.addEventListener("click", function () {
+    if (THERAPYSUB.classList.contains("showSubMenuMD")) {
+        THERAPYSUB.classList.add("opacity-0");
+        THERAPYSUB.classList.remove("showSubMenuMD");
+        THERAPYMDCHEVRON.classList.remove("bi-chevron-right");
+        THERAPYMDCHEVRON.classList.add("bi-chevron-down");
+        setTimeout(function () {
+            THERAPYSUB.classList.add("d-none");
+            THERAPYSUB.classList.remove("d-md-block");
+        }, 500);
     }
-
-    setTimeout(function () {
-        if (RETREATSUBMENUMD.classList.contains("heightMenumdRetreat")) {
-            RETREATSUBMENUMD.classList.remove("heightMenumdRetreat");
-            retreatMenuMDChevron.classList.add("bi-chevron-down");
-            retreatMenuMDChevron.classList.remove("bi-chevron-up");
-        }
-
-        else {
-            RETREATSUBMENUMD.classList.add("heightMenumdRetreat");
-            retreatMenuMDChevron.classList.remove("bi-chevron-down");
-            retreatMenuMDChevron.classList.add("bi-chevron-up");
-        }
-    }, 1);
-
+    if (RETREATSUB.classList.contains("opacity-0")) {
+        RETREATSUB.classList.add("d-md-block");
+        NAVIGATIONMOTHERMDBG.classList.add("NavMDBGAfterClick");
+        setTimeout(function () {
+            RETREATMDCHEVRON.classList.add("bi-chevron-right");
+            RETREATMDCHEVRON.classList.remove("bi-chevron-down");
+            RETREATSUB.classList.add("showSubMenuMD");
+            RETREATSUB.classList.remove("opacity-0");
+        }, 15);
+    } else {
+        RETREATSUB.classList.add("opacity-0");
+        RETREATSUB.classList.remove("showSubMenuMD");
+        RETREATMDCHEVRON.classList.remove("bi-chevron-right");
+        RETREATMDCHEVRON.classList.add("bi-chevron-down");
+        NAVIGATIONMOTHERMDBG.classList.remove("NavMDBGAfterClick");
+        setTimeout(function () {
+            RETREATSUB.classList.add("d-none");
+            RETREATSUB.classList.remove("d-md-block");
+        }, 500);
+    }
 });
 
-// Therapies SubMenu MD
-const THERAPIESMENUMD = document.querySelector(".motherSubMenumdTherapies");
-const THERAPIESSUBMENUMD = document.querySelector(".subMenumdTherapies");
-let therapiesMenuMDChevron = document.querySelector(".chevronSubMenumdTherapies");
-THERAPIESMENUMD.addEventListener("click", function () {
-    if (RETREATSUBMENUMD.classList.contains("heightMenumdRetreat")) {
-        RETREATSUBMENUMD.classList.remove("heightMenumdRetreat");
-        retreatMenuMDChevron.classList.add("bi-chevron-down");
-        retreatMenuMDChevron.classList.remove("bi-chevron-up");
-    }
-    setTimeout(function () {
-        if (THERAPIESSUBMENUMD.classList.contains("heightMenumdRetreat")) {
-            THERAPIESSUBMENUMD.classList.remove("heightMenumdRetreat");
-            therapiesMenuMDChevron.classList.add("bi-chevron-down");
-            therapiesMenuMDChevron.classList.remove("bi-chevron-up");
-        }
 
-        else {
-            THERAPIESSUBMENUMD.classList.add("heightMenumdRetreat");
-            therapiesMenuMDChevron.classList.remove("bi-chevron-down");
-            therapiesMenuMDChevron.classList.add("bi-chevron-up");
-        }
-    }, 1);
+// Therapies SubMenu MD
+const THERAPYSUB = document.querySelector(".TherapySubMenunew"), THERAPYMDCHEVRON = document.querySelector(".chevronSubMenumdTherapies");
+const THERAPYMENUMOTHER = document.querySelector(".motherSubMenumdTherapies");
+THERAPYMENUMOTHER.addEventListener("click", function () {
+    if (RETREATSUB.classList.contains("showSubMenuMD")) {
+        RETREATSUB.classList.add("opacity-0");
+        RETREATSUB.classList.remove("showSubMenuMD");
+        RETREATMDCHEVRON.classList.remove("bi-chevron-right");
+        RETREATMDCHEVRON.classList.add("bi-chevron-down");
+        setTimeout(function () {
+            RETREATSUB.classList.add("d-none");
+            RETREATSUB.classList.remove("d-md-block");
+        }, 500);
+    }
+    if (THERAPYSUB.classList.contains("opacity-0")) {
+        THERAPYSUB.classList.add("d-md-block");
+        NAVIGATIONMOTHERMDBG.classList.add("NavMDBGAfterClick");
+        setTimeout(function () {
+            THERAPYMDCHEVRON.classList.add("bi-chevron-right");
+            THERAPYMDCHEVRON.classList.remove("bi-chevron-down");
+            THERAPYSUB.classList.add("showSubMenuMD");
+            THERAPYSUB.classList.remove("opacity-0");
+        }, 15);
+    } else {
+        THERAPYSUB.classList.add("opacity-0");
+        THERAPYSUB.classList.remove("showSubMenuMD");
+        THERAPYMDCHEVRON.classList.remove("bi-chevron-right");
+        THERAPYMDCHEVRON.classList.add("bi-chevron-down");
+        NAVIGATIONMOTHERMDBG.classList.remove("NavMDBGAfterClick");
+        setTimeout(function () {
+            THERAPYSUB.classList.add("d-none");
+            THERAPYSUB.classList.remove("d-md-block");
+        }, 500);
+    }
 });
 
 // Slider
@@ -163,6 +185,7 @@ const OBSERVER = new IntersectionObserver((entries) => {
         }
     });
 });
+
 const HIDDENELEMENTS = document.querySelectorAll(".hiddenScrollEffect");
 HIDDENELEMENTS.forEach((el) => OBSERVER.observe(el));
 
@@ -174,39 +197,65 @@ let menuMDNewColor = document.querySelectorAll(".menuMDNewColor");
 let navXSBgScroll = document.querySelector(".navXSBgScroll");
 window.addEventListener('scroll', function () {
     if (this.document.documentElement.scrollTop > 100) {
-        motherNavBg.classList.add("NavBackGroundColorBlue");
-        subMenuBg.classList.add("backGroundColorGray");
-        startAgain.classList.remove("opacity-0");
-        startAgain.classList.add("opacity-1");
-        navXSBgScroll.classList.add("navXSBg");
-        for (let i = 0; i <= 5; i++) {
-            menuMDNewColor[i].classList.remove("text-white");
-            menuMDNewColor[i].classList.add("submenuColorA");
-        }
+        motherNavBg.classList.add("SpecialGreenNavColor");
+        navXSBgScroll.classList.add("SpecialGreenNavColor");
     }
     else {
-        motherNavBg.classList.remove("NavBackGroundColorBlue");
-        subMenuBg.classList.remove("backGroundColorGray");
-        startAgain.classList.remove("opacity-1");
-        startAgain.classList.add("opacity-0");
-        navXSBgScroll.classList.remove("navXSBg");
-        for (let i = 0; i <= 5; i++) {
-            menuMDNewColor[i].classList.add("text-white");
-            menuMDNewColor[i].classList.remove("submenuColorA");
-        }
+        motherNavBg.classList.remove("SpecialGreenNavColor");
+        navXSBgScroll.classList.remove("SpecialGreenNavColor");
     }
 });
 // pre-loading Page
-let closePreLoadingPage = document.querySelector(".closePreLoadingPage");
-let closePreLoadingPageIcon = document.querySelector(".closePreLoadingPageIcon");
-let preLoadingPage = document.querySelector(".preLoadingPage");
-closePreLoadingPageIcon.addEventListener("click", function () {
-    closePreLoadingPage.classList.add("d-none");
-});
+// let closePreLoadingPage = document.querySelector(".closePreLoadingPage");
+// let closePreLoadingPageIcon = document.querySelector(".closePreLoadingPageIcon");
+// let preLoadingPage = document.querySelector(".preLoadingPage");
+// closePreLoadingPageIcon.addEventListener("click", function () {
+//     closePreLoadingPage.classList.add("d-none");
+// });
 
-window.addEventListener("load", function () {
-    closePreLoadingPage.classList.add("opacity-1");
-    closePreLoadingPage.classList.remove("opacity-0");
-    preLoadingPage.classList.add("preLoadingAfterEffect");
-    preLoadingPage.classList.remove("preLoadingBeforeEffect");
-});
+// window.addEventListener("load", function () {
+//     closePreLoadingPage.classList.add("opacity-1");
+//     closePreLoadingPage.classList.remove("opacity-0");
+//     preLoadingPage.classList.add("preLoadingAfterEffect");
+//     preLoadingPage.classList.remove("preLoadingBeforeEffect");
+// });
+
+// Counter UP
+const MOTHERCOUNTERUP = document.querySelector(".motherCounterUp");
+const TEXTCOUNTERUP = document.querySelectorAll(".textCounterUp");
+const CounterObserver = new IntersectionObserver(
+    (entries, observer) => {
+        let [entry] = entries;
+        if (!entry.isIntersecting) return;
+
+        let speedCounter = 200;
+        TEXTCOUNTERUP.forEach((counter, index) => {
+            function UpdateCounter() {
+                const maxNumber = +counter.dataset.max;
+                const initialNumber = +counter.innerText;
+                const incPerCount = maxNumber / speedCounter;
+                if (initialNumber < maxNumber) {
+                    counter.innerText = Math.ceil(initialNumber + incPerCount);
+                    setTimeout(UpdateCounter, 40);
+                } else {
+                    counter.innerText = maxNumber;
+                }
+            }
+            UpdateCounter();
+
+            if (counter.parentElement.style.animation) {
+                counter.parentElement.style.animation = '';
+            } else {
+                counter.parentElement.style.animation = `slide-up 0.3s ease forwards ${index / TEXTCOUNTERUP.length + 0.5
+                    }s`;
+            }
+        });
+        observer.unobserve(MOTHERCOUNTERUP);
+    },
+    {
+        root: null,
+        threshold: window.innerWidth > 768 ? 0.4 : 0.3,
+    }
+);
+
+CounterObserver.observe(MOTHERCOUNTERUP);
