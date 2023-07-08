@@ -1,652 +1,1052 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="danialTamimi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="danialTamimi" />
     <title>Anima Sana</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/index.css">
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
     <!-- http://animasanauae.com/ -->
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <div class="container-fluid">
-        <!-- Start Navigation -->
+      <!-- Start Navigation -->
+      <div
+        class="row w-100 d-md-flex align-items-md-center justify-content-md-between position-md-fixed motherNavBg longTransition"
+      >
+        <!-- popUp Md -->
         <div
-            class="row w-100 d-md-flex align-items-md-center justify-content-md-between position-md-fixed motherNavBg longTransition">
+          class="col-12 d-none w-100 popupfirstHeight overflow-hidden popUpMother d-md-flex justify-content-between align-items-center longTransition"
+        >
+          <div
+            class="d-flex align-items-center mx-auto position-relative popUpTextBox"
+          >
             <div
-                class="col-12 d-flex flex-column align-items-end d-md-flex justify-content-md-between align-items-md-center p-0">
-                <div
-                    class="d-flex justify-content-between align-items-center d-md-none py-3 px-sm navPositionsm navsizexs navXSBgScroll longTransition">
-                    <div class="d-flex align-items-center wmenuxs wmenulg ps-3">
-                        <img src="images/animaSanaLogo.png" class="d-block float-start logoSize" alt="animaSana">
-                        <a href="index.html"
-                            class="ms-2 text-uppercase text-white fw-bolder pointer text-decoration-none fsHeader fsSerif"
-                            title="AnimaSana">Anima&nbsp;sana</a>
-                    </div>
-                    <div class="border border-white d-md-none menu-design pointer menuButton">
-                        <i
-                            class="bi bi-list px-2 text-white text-center fw-bolder menu-size specialColorOrange generalTransition openMenu"></i>
-                    </div>
-                </div>
-                <div
-                    class="w-100 h-100 d-none d-md-flex justify-content-md-evenly align-items-md-center pt-3 NavMdSize NavMDBGAfterClickSelect longTransition">
-                    <div class="d-flex align-items-center ps-4">
-                        <img src="images/animaSanaLogo.png" class="d-block float-start logoSize" alt="animaSana">
-                        <a href="index.html"
-                            class="ms-2 text-uppercase text-white fw-bolder pointer text-decoration-none fsHeader fsSerif"
-                            title="AnimaSana">Anima&nbsp;sana</a>
-                    </div>
-                    <!-- Menu MD -->
-                    <ul
-                        class="list-unstyled mb-0 w-100 h-100 d-flex justify-content-evenly align-items-center subMenuBg designMenu py-1 longTransition">
-                        <li class="d-flex justify-content-center position-relative align-items-center h-100 px-2 py-2">
-                            <a class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri pointer btmBorderHoverOrange menuMDNewColor motherSubMenumdRetreat MDNavColor"
-                                title="RETREAT & HEAL">retreat & heal<i
-                                    class="bi bi-chevron-down fs-6 ps-2 chevronSubMenumdRetreat"></i></a>
-                        </li>
-                        <li
-                            class="d-flex justify-content-center align-items-center h-100 position-relative motherSubMenumdTherapies">
-                            <a class="text-decoration-none py-1 me-2 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri pointer btmBorderHoverOrange menuMDNewColor MDNavColor"
-                                title="THERAPIES">therapies<i
-                                    class="bi bi-chevron-down fs-6 ps-2 chevronSubMenumdTherapies"></i></a>
-                        </li>
-                        <li class="d-flex justify-content-center align-items-center h-100"><a href="pages/aboutus.html"
-                                class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-white me-2 fw-bold generalffsanseri btmBorderHoverOrange menuMDNewColor MDNavColor"
-                                title="ABOUT US">about us</a></li>
-                        <li class="d-flex justify-content-center align-items-center h-100"><a
-                                href="pages/contactus.html"
-                                class="text-decoration-none py-1 pe-2 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri btmBorderHoverOrange menuMDNewColor MDNavColor"
-                                title="CONTACT US">contact us</a></li>
-                    </ul>
-                </div>
-                <!-- SubMenu MD Menu -->
-                <!-- Retreat SubMenu -->
-                <div class="w-100 d-none opacity-0 NavSubMenuMDSize RetreatSubMenunew longTransition">
-                    <ul
-                        class="d-flex flex-wrap justify-content-evenly w-100 h-100 align-content-start fw-bolder list-unstyled position-absolute longTransition">
-                        <li
-                            class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu">
-                            <a href="pages/experience.html"
-                                class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks">What
-                                does this experience entail ?</a>
-                        </li>
-                        <li
-                            class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu">
-                            <a href="pages/benefitsretreat.html"
-                                class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks">What
-                                are the
-                                benefits of an intensive
-                                retreat ?</a>
-                        </li>
-                        <li
-                            class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu">
-                            <a href="pages/accomplish.html"
-                                class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks">What
-                                can I expect to accomplish ?</a>
-                        </li>
-                        <li
-                            class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu">
-                            <a href="pages/ourhelp.html"
-                                class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks">What
-                                we help with ?</a>
-                        </li>
-                        <li
-                            class="w-50 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu">
-                            <a href="pages/pricing.html"
-                                class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks">Pricing
-                                & FAQ's</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Therapies MenuMD -->
-                <div class="w-100 d-none opacity-0 NavSubMenuMDSize TherapySubMenunew longTransition">
-                    <ul
-                        class="d-flex flex-wrap justify-content-evenly w-100 h-100 align-content-start fw-bolder list-unstyled position-absolute longTransition">
-                        <li
-                            class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect therapySubMenu">
-                            <a href="pages/experience.html"
-                                class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks">EMDR</a>
-                        </li>
-                        <li
-                            class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect therapySubMenu">
-                            <a href="pages/benefitsretreat.html"
-                                class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks">Breathwork</a>
-                        </li>
-                        <li
-                            class="w-50 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect therapySubMenu">
-                            <a href="pages/pricing.html"
-                                class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks">Trauma</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Menu for xs sm md -->
-                <div
-                    class="h-100 w-100 overflow-hidden d-md-none longTransition submenu subMenuPositionsm backDropFilterImg longTransition closeSubMenu">
-                    <!-- Main SubMenu Xs -->
-                    <div class="h-100 float-end w-90 specialBackGroundColorGreen">
-                        <i class="bi bi-x-lg px-2 text-white text-center fw-bolder menu-size specialColorOrange generalTransition closeMenu pointer"
-                            title="Close"></i>
-                        <div class="d-flex justify-content-center align-items-center mt-4 mb-5">
-                            <img src="" alt="">
-                            <span class="text-center text-white fw-bolder fs-5 fsSerif">Anima Sana</span>
-                        </div>
-                        <ul class="d-flex flex-column align-items-center h-100 list-unstyled">
-                            <!-- Retreat Sub Menu -->
-                            <li class="w-100 mx-auto motherRetreatSubMenu mt-3">
-                                <a
-                                    class="text-decoration-none w-100 text-center d-inline-block position-relative text-white designSubMenuA MenudesignHover generalTransition pointer p-2 py-3 mb-2 navigationff">Retreat
-                                    & Heal
-                                    <i class="bi bi-chevron-down fs-6 ps-2 retreatMenuChevron"></i>
-                                </a>
-                                <ul
-                                    class="d-flex flex-column justify-content-start align-items-start fw-bolder w-100 h-0 overflow-hidden retreatSubMenuXS longTransition list-unstyled">
-                                    <li class="w-100 bg-dark">
-                                        <a href="pages/experience.html"
-                                            class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">What
-                                            does this experience entail?</a>
-                                    </li>
-                                    <li class="w-100 bg-dark">
-                                        <a href="pages/benefitsretreat.html"
-                                            class="d-inline-block py-3 w-100 text-center text-black text-decoration-none border-bottom border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">What
-                                            are the
-                                            benefits of an intensive
-                                            retreat?</a>
-                                    </li>
-                                    <li class="w-100 bg-dark">
-                                        <a href="pages/accomplish.html"
-                                            class=" d-inline-block py-3 w-100 text-black text-center text-decoration-none border-bottom border-secondary generalTransition submenuColorA MenudesignHover generalffsanserif">What
-                                            can I expect to accomplish?</a>
-                                    </li>
-                                    <li class="w-100 bg-dark">
-                                        <a href="pages/ourhelp.html"
-                                            class="d-inline-block py-3 w-100 text-center text-decoration-none border-bottom border-secondary text-black generalTransition submenuColorA MenudesignHover generalffsanserif">What
-                                            we help with?</a>
-                                    </li>
-                                    <li class="w-100 bg-dark">
-                                        <a href="pages/pricing.html"
-                                            class="d-inline-block py-3 w-100 text-center text-black text-decoration-none generalTransition submenuColorA MenudesignHover generalffsanserif">Pricing
-                                            & FAQ's</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
-                            <!-- Therapy Sub menu -->
-                            <li class="w-100 mx-auto motherTherapySubMenu"><a
-                                    class="text-decoration-none w-100 text-center d-inline-block position-relative text-white designSubMenuA MenudesignHover generalTransition pointer p-2 py-3 mb-2 navigationff">Therapies
-                                    <i class="bi bi-chevron-down fs-6 ps-2 therapyMenuChevron"></i></a>
-                                <ul
-                                    class="d-flex flex-column justify-content-start align-items-start fw-bolder w-100 h-0 overflow-hidden longTransition list-unstyled therapySubMenu">
-                                    <li class="w-100 bg-dark">
-                                        <a href="pages/emdr.html"
-                                            class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">EMDR</a>
-                                    </li>
-                                    <li class="w-100 bg-dark">
-                                        <a href="pages/breathwork.html"
-                                            class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">Breathwork</a>
-                                    </li>
-                                    <li class="w-100 bg-dark">
-                                        <a href="pages/trauma.html"
-                                            class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif">Trauma</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
-                            <li class="w-100 mx-auto"><a
-                                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 py-3 position-relative designSubMenuA MenudesignHover generalTransition navigationff"
-                                    href="pages/aboutus.html">About us</a></li>
-                            <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
-                            <li class="w-100 mx-auto"><a
-                                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 py-3 position-relative MenudesignHover generalTransition designSubMenuA navigationff"
-                                    href="pages/contactus.html">Contact us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+              id="popBall"
+              class="popUpBall bg-black position-absolute rounded-circle longTransition"
+            ></div>
+            <div class="position-absolute w-100 h-100 popUpCover"></div>
+            <span class="text-uppercase popText opacity-0 fsSerif fw-bolder"
+              >anima sana here to help you see different side of your life</span
+            >
+          </div>
+          <i class="bi bi-x-lg me-3 fs-5 fw-bold popUpClose pointer"></i>
         </div>
-        <!-- Button for come first again -->
-        <div class="row d-flex justify-content-md-end align-items-md-center">
-            <div
-                class="col-12 d-flex flex-column justify-content-center align-items-center p-0 position-fixed rounded-pill opacity-0 startAgain longTransition">
-                <a href="#firstPart"
-                    class="w-100 h-100 d-block d-flex flex-column justify-content-center align-items-center fs-3 text-white fw-bolder rounded-pill"><i
-                        class="bi bi-chevron-up"></i></a>
-            </div>
-        </div>
-        <!-- Part one -->
-        <div class="row d-flex flex-column justify-content-md-center align-items-center height-100 partoneBackGroundMother"
-            id="firstPart">
-            <div class="w-100 NavMdSize d-none d-md-block"></div>
-            <div
-                class="col-12 col-md-11 d-flex flex-column justify-content-center align-items-center p-0 partoneBackGround designPartoneTextMD designPartoneTextXS user-select-none">
-                <div
-                    class="w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-50">
-                    <h3 class="fw-light fsPartOneSmall text-light fsSerif">welcome !</h3>
-                    <h1 class="fw-bolder fsPartOneBig text-light fsSerif">Anima Sana</h1>
-                    <h6 class="fw-light fsPartOneSmall text-light fsSerif">In</h6>
-                    <h6 class="fw-bolder fsPartOneBig text-light fsSerif">Dubai</h6>
-                </div>
-            </div>
-            <div class="col-12 d-flex justify-content-center align-items-center p-0 h-10 designPartoneArrowXS"
-                id="aboutUS">
-                <a href="#aboutUS"
-                    class="text-decoration-none d-flex align-items-center justify-content-center text-white text-center w-5 h-100 fs-1 generalffsanserif"><i
-                        class="bi bi-chevron-down hoverArrowDown generalTransition animationArrowDown"></i></a>
-            </div>
-        </div>
-        <!-- Part two -->
-        <div class="row height-100 partTwoBackGround mamad">
-            <div
-                class="col-12 d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between w-100 h-100 px-0 bg-dark bg-opacity-25 opacity-md-none">
-                <div
-                    class="d-flex flex-column justify-content-evenly align-items-center w-85 h-75 rounded-2 bg-white hiddenScrollEffect">
-                    <h3 class="fsSerif fw-bolder text-center">Anima Sana</h3>
-                    <p class="px-3 fw-light generalffsanserif">Amelia Simpson, BSc, MSc, PgD, is the founder of Amina
-                        Sana and is
-                        a Consultant Psychologist
-                        working in the UAE. Amelia is UK trained and Registered Psychologist with the HCPC (in the
-                        UK), CDA (in the UAE) and a Europe Certified EMDR therapist, registered with EMDR Europe and
-                        EMDRIA. </p>
-                    <a href="pages/contactus.html"
-                        class="text-decoration-none px-2 py-3 border fw-bold position-relative d-flex justify-content-center align-items-center overflow-hidden text-capitalize designButton generalTransition">
-                        <span class="w-100 h-100 position-relative text-center z-2">More about Anima Sana <i
-                                class="bi bi-chevron-right generalTransition"></i>
-                        </span>
-                    </a>
-                </div>
-                <div
-                    class="d-none d-md-flex flex-md-column align-items-md-center justify-content-md-center w-50 h-100 partTwoMDImage rounded-start-pill">
-                </div>
-            </div>
-        </div>
-        <!-- Part Three -->
         <div
-            class="row d-flex flex-column justify-content-evenly align-items-center d-md-flex flex-md-row flex-md-wrap justify-content-md-around align-content-md-center pb-4 specialBackGroundColorBlue">
-            <div class="col-12 d-flex justify-content-center align-items-center text-center mt-5">
-                <h2 class="text-white fw-bolder mt-4 fsSerif">Therapies</h2>
+          class="col-12 d-flex flex-column align-items-end d-md-flex justify-content-md-between align-items-md-center p-0"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center d-md-none py-3 px-sm navPositionsm navsizexs navXSBgScroll longTransition"
+          >
+            <div class="d-flex align-items-center wmenuxs wmenulg ps-3">
+              <img
+                src="images/animaSanaLogo.png"
+                class="d-block float-start logoSize"
+                alt="animaSana"
+              />
+              <a
+                href="index.html"
+                class="ms-2 text-uppercase text-white fw-bolder pointer text-decoration-none fsHeader fsSerif"
+                title="AnimaSana"
+                >Anima&nbsp;sana</a
+              >
             </div>
             <div
-                class="col-10 col-sm-8 col-md-4 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center hiddenScrollEffect">
-                <div
-                    class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree">
-                    <img class="d-inline-block w-100 designImagePartThree generalTransition" src="images/partThree1.jpg"
-                        alt="">
-                    <a href="#"
-                        class="position-absolute h6 w-100 h-100 z-1 d-flex justify-content-center align-items-center text-white mb-0 fw-bolder text-decoration-none fsSerif designHPartThree generalTransition"><span
-                            class="designHPartThreehover generalTransition">Lorem ipsum dolor sit</span></a>
-                </div>
-                <p class="my-3 px-3 generalffsanserif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                    alias
-                    officia ea eum! Deleniti
-                    tempora nulla nesciunt porro voluptates dolorem velit ab voluptate optio sapiente.</p>
-                <a href="#"
-                    class="text-decoration-none bg-white fw-bold text-capitalize rounded-pill mb-4 p-2 orangeColorBTN">More
-                    about anima sana
-                    <i class="bi bi-chevron-right orangeColorBTNChevron generalTransition"></i>
-                </a>
+              class="border border-white d-md-none menu-design pointer menuButton"
+            >
+              <i
+                class="bi bi-list px-2 text-white text-center fw-bolder menu-size specialColorOrange generalTransition openMenu"
+              ></i>
             </div>
-            <div
-                class="col-10 col-sm-8 col-md-4 offset-md-1 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center hiddenScrollEffect">
-                <div
-                    class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree">
-                    <img class="d-inline-block w-100 designImagePartThree generalTransition" src="images/partThree2.jpg"
-                        alt="">
-                    <a href="#"
-                        class="position-absolute h6 w-100 h-100 z-1 d-flex justify-content-center align-items-center text-white mb-0 fw-bolder text-decoration-none fsSerif designHPartThree generalTransition"><span
-                            class="designHPartThreehover generalTransition">Lorem ipsum dolor sit</span></a>
-                </div>
-                <p class="my-3 px-3 generalffsanserif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                    alias
-                    officia ea eum! Deleniti
-                    tempora nulla nesciunt porro voluptates dolorem velit ab voluptate optio sapiente.</p>
-                <a href="#"
-                    class="text-decoration-none bg-white fw-bold text-capitalize rounded-pill mb-4 p-2 orangeColorBTN">More
-                    about anima sana
-                    <i class="bi bi-chevron-right orangeColorBTNChevron generalTransition"></i>
-                </a>
+          </div>
+          <div
+            class="w-100 h-100 d-none d-md-flex justify-content-md-evenly align-items-md-center pt-3 NavMdSize NavMDBGAfterClickSelect longTransition"
+          >
+            <div class="d-flex align-items-center ps-4">
+              <img
+                src="images/animaSanaLogo.png"
+                class="d-block float-start logoSize"
+                alt="animaSana"
+              />
+              <a
+                href="index.html"
+                class="ms-2 text-uppercase text-white fw-bolder pointer text-decoration-none fsHeader fsSerif"
+                title="AnimaSana"
+                >Anima&nbsp;sana</a
+              >
             </div>
-            <div
-                class="col-10 col-sm-8 col-md-4 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center marginPartThreeBottom hiddenScrollEffect">
-                <div
-                    class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree">
-                    <img class="d-inline-block w-100 designImagePartThree generalTransition" src="images/partThree3.jpg"
-                        alt="">
-                    <a href="#"
-                        class="position-absolute h6 w-100 h-100 z-1 d-flex justify-content-center align-items-center text-white mb-0 fw-bolder text-decoration-none fsSerif designHPartThree generalTransition"><span
-                            class="designHPartThreehover generalTransition">Lorem ipsum dolor sit</span></a>
-                </div>
-                <p class="my-3 px-3 generalffsanserif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                    alias
-                    officia ea eum! Deleniti
-                    tempora nulla nesciunt porro voluptates dolorem velit ab voluptate optio sapiente.</p>
-                <a href="#"
-                    class="text-decoration-none bg-white fw-bold text-capitalize rounded-pill mb-4 p-2 orangeColorBTN">More
-                    about anima sana
-                    <i class="bi bi-chevron-right orangeColorBTNChevron generalTransition"></i>
-                </a>
-            </div>
-            <div
-                class="col-10 col-sm-8 col-md-4 offset-md-1 bg-white rounded-4 px-0 mt-5 mb-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center marginPartThreeBottom hiddenScrollEffect">
-                <div
-                    class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree">
-                    <img class="d-inline-block w-100 designImagePartThree generalTransition" src="images/partThree4.jpg"
-                        alt="">
-                    <a href="#"
-                        class="position-absolute h6 w-100 h-100 z-1 d-flex justify-content-center align-items-center text-white mb-0 fw-bolder text-decoration-none fsSerif designHPartThree generalTransition"><span
-                            class="designHPartThreehover generalTransition">Lorem ipsum dolor sit</span></a>
-                </div>
-                <p class="my-3 px-3 generalffsanserif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                    alias
-                    officia ea eum! Deleniti
-                    tempora nulla nesciunt porro voluptates dolorem velit ab voluptate optio sapiente.</p>
-                <a href="#"
-                    class="text-decoration-none bg-white fw-bold text-capitalize rounded-pill mb-4 p-2 orangeColorBTN">More
-                    about anima sana
-                    <i class="bi bi-chevron-right orangeColorBTNChevron generalTransition"></i>
-                </a>
-            </div>
-        </div>
-        <!-- Part Four -->
-        <div class="row">
-            <div
-                class="col-12 d-flex flex-column justify-content-between align-items-center height-100 backGroundColorMilky">
-                <div class="d-flex flex-column justify-content-between align-items-center mt-5 w-100">
-                    <h1 class="fsSerif fw-bolder mb-4">Anima Sana</h1>
-                    <p class="fs-4 fw-light text-center generalffsanserif">We are here to help you see a different side
-                        of life
-                    </p>
-                </div>
-                <div
-                    class="d-flex flex-column justify-content-between align-items-center d-md-flex flex-md-row justify-content-md-around align-items-md-center w-100 border border-dark border-start-0 border-end-0 h-50 motherCounterUp">
-                    <div class="d-flex flex-column justify-content-between align-items-center text-center margin-top">
-                        <span class="fs-5 fw-bolder fsSerif">experience</span>
-                        <span class="fs-5 text-capitalize fw-light generalffsanserif"><span class="textCounterUp"
-                                data-max="12">0</span> years</span>
-                    </div>
-                    <div class="d-flex flex-column justify-content-between align-items-center text-center">
-                        <span class="fs-5 fw-bolder fsSerif">client</span>
-                        <span class="fs-5 text-capitalize fw-light generalffsanserif textCounterUp"
-                            data-max="1253">0</span>
-                    </div>
-                    <div class="d-flex flex-column justify-content-between align-items-center text-center">
-                        <span class="fs-5 fw-bolder fsSerif">Satisfaction percentage</span>
-                        <span class="fs-5 text-capitalize fw-light generalffsanserif"><span class="textCounterUp"
-                                data-max="97">0</span>%</span>
-                    </div>
-                    <div
-                        class="d-flex flex-column justify-content-between align-items-center text-center margin-bottom">
-                        <span class="fs-5 fw-bolder fsSerif">our package period</span>
-                        <span class="fs-5 text-capitalize fw-light generalffsanserif"><span class="textCounterUp"
-                                data-max="4">0</span> weeks</span>
-                    </div>
-                </div>
-                <a href="pages/contactus.html"
-                    class="text-decoration-none mb-5 px-2 py-3 border fw-bold position-relative d-flex justify-content-center align-items-center overflow-hidden text-capitalize designButton generalTransition">
-                    <span class="w-100 h-100 position-relative z-2">Contact Us <i
-                            class="bi bi-chevron-right generalTransition"></i>
-                    </span>
-                </a>
-            </div>
-        </div>
-        <!-- Part Five -->
-        <div
-            class="row d-flex justify-content-center align-items-center justify-content-md-end partFourBackGround height-100">
-            <div
-                class="col-10 col-md-6 px-3 d-flex flex-column justify-content-around align-items-center rounded-2 h-80 bg-white margin-start hiddenScrollEffect">
-                <h3 class="text-center fw-bolder fsSerif">Treatment package</h3>
-                <p class="generalffsanserif">Our intensive therapy retreats are based on the most current scientific
-                    understanding of adult mental
-                    health and how we are affected by trauma. Our counseling and mental health services utilize the most
-                    effective methods to help you process your trauma and move forward in life, unencumbered by negative
-                    past experiences.</p>
-                <a href="pages/contactus.html"
-                    class="text-decoration-none px-2 py-3 border fw-bold position-relative d-flex justify-content-center align-items-center overflow-hidden text-capitalize designButton generalTransition">
-                    <span class="w-100 h-100 position-relative text-center z-2">Contact Us <i
-                            class="bi bi-chevron-right generalTransition"></i>
-                    </span>
-                </a>
-            </div>
-        </div>
-        <!-- How We can Help -->
-        <div class="row partEightMotherSize backGroundColorMilky">
-            <div class="col-12">
-                <h5 class="w-100 text-center fw-bold fsSerif my-5">How Anima Sana can help me?</h5>
-                <div class="d-md-flex flex-md-row justify-content-md-evenly align-items-md-center">
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
-                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
-                            and share them with others.</p>
-                    </div>
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
-                        <img src="images/progress.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Renewed Clarity</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Gain a stronger sense of purpose and
-                            direction in your life.</p>
-                    </div>
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
-                        <img src="images/happines.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Unburden Yourself</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Heal your unprocessed trauma and put it
-                            to rest once and for all.</p>
-                    </div>
-                </div>
-                <div class="d-md-flex flex-md-row justify-content-md-evenly align-items-md-center">
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
-                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
-                            and share them with others.</p>
-                    </div>
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
-                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
-                            and share them with others.</p>
-                    </div>
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect">
-                        <img src="images/Communication.png" class="test d-block mb-3" alt="">
-                        <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2">Better Communication</span>
-                        <p class="text-center generalffsanserif fs-5 fw-light">Learn skills to understand your feelings
-                            and share them with others.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Slider -->
-        <div class="row height-100">
-            <div
-                class="col-12 w-100 h-100 overflow-hidden px-0 sliderContainers sliderBackgroundImage position-relative">
-                <div
-                    class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition firstSliderItem">
-                    <div class="w-100 h-100 d-flex sliderItemsMDBackground">
-                        <div
-                            class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD">
-                            <p class="generalffsanserif fw-light fs-5">“Life damages us – everyone – we cannot escape
-                                that
-                                damage
-                                – but now I am also learning this… that we can be mended... we mend each other”</p>
-                            <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition">
-                    <div class="w-100 h-100 d-flex sliderItemsMDBackground">
-                        <div
-                            class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD">
-                            <p class="generalffsanserif fw-light fs-5">“Life damages us – everyone – we cannot escape
-                                that
-                                damage
-                                – but now I am also learning this… that we can be mended... we mend each other”</p>
-                            <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition">
-                    <div class="w-100 h-100 d-flex sliderItemsMDBackground">
-                        <div
-                            class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD">
-                            <p class="generalffsanserif fw-light fs-5">“Life damages us – everyone – we cannot escape
-                                that
-                                damage
-                                – but now I am also learning this… that we can be mended... we mend each other”</p>
-                            <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition">
-                    <div class="w-100 h-100 d-flex sliderItemsMDBackground">
-                        <div
-                            class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD">
-                            <p class="generalffsanserif fw-light fs-5">“Life damages us – everyone – we cannot escape
-                                that
-                                damage
-                                – but now I am also learning this… that we can be mended... we mend each other”</p>
-                            <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition">
-                    <div class="w-100 h-100 d-flex sliderItemsMDBackground">
-                        <div
-                            class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD">
-                            <p class="generalffsanserif fw-light fs-5">“Life damages us – everyone – we cannot escape
-                                that
-                                damage
-                                – but now I am also learning this… that we can be mended... we mend each other”</p>
-                            <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="w-100 position-absolute sliderIcon d-flex align-items-center justify-content-between text-white">
+            <!-- Menu MD -->
+            <ul
+              class="list-unstyled mb-0 w-100 h-100 d-flex justify-content-evenly align-items-center subMenuBg designMenu py-1 longTransition"
+            >
+              <li
+                class="d-flex justify-content-center position-relative align-items-center h-100 px-2 py-2"
+              >
+                <a
+                  class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri pointer btmBorderHoverOrange menuMDNewColor motherSubMenumdRetreat MDNavColor"
+                  title="RETREAT & HEAL"
+                  >retreat & heal<i
+                    class="bi bi-chevron-down fs-6 ps-2 chevronSubMenumdRetreat"
+                  ></i
+                ></a>
+              </li>
+              <li
+                class="d-flex justify-content-center align-items-center h-100 position-relative motherSubMenumdTherapies"
+              >
+                <a
+                  class="text-decoration-none py-1 me-2 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri pointer btmBorderHoverOrange menuMDNewColor MDNavColor"
+                  title="THERAPIES"
+                  >therapies<i
+                    class="bi bi-chevron-down fs-6 ps-2 chevronSubMenumdTherapies"
+                  ></i
+                ></a>
+              </li>
+              <li
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <a
+                  href="pages/aboutus.html"
+                  class="text-decoration-none py-1 position-relative generalTransition text-uppercase text-white me-2 fw-bold generalffsanseri btmBorderHoverOrange menuMDNewColor MDNavColor"
+                  title="ABOUT US"
+                  >about us</a
+                >
+              </li>
+              <li
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <a
+                  href="pages/contactus.html"
+                  class="text-decoration-none py-1 pe-2 position-relative generalTransition text-uppercase text-white fw-bold generalffsanseri btmBorderHoverOrange menuMDNewColor MDNavColor"
+                  title="CONTACT US"
+                  >contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- SubMenu MD Menu -->
+          <!-- Retreat SubMenu -->
+          <div
+            class="w-100 d-none opacity-0 NavSubMenuMDSize RetreatSubMenunew longTransition"
+          >
+            <ul
+              class="d-flex flex-wrap justify-content-evenly w-100 h-100 align-content-start fw-bolder list-unstyled position-absolute longTransition"
+            >
+              <li
+                class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu"
+              >
+                <a
+                  href="pages/experience.html"
+                  class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks"
+                  >What does this experience entail ?</a
+                >
+              </li>
+              <li
+                class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu"
+              >
+                <a
+                  href="pages/benefitsretreat.html"
+                  class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks"
+                  >What are the benefits of an intensive retreat ?</a
+                >
+              </li>
+              <li
+                class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu"
+              >
+                <a
+                  href="pages/accomplish.html"
+                  class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks"
+                  >What can I expect to accomplish ?</a
+                >
+              </li>
+              <li
+                class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu"
+              >
+                <a
+                  href="pages/ourhelp.html"
+                  class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks"
+                  >What we help with ?</a
+                >
+              </li>
+              <li
+                class="w-50 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect retreatSubMenu"
+              >
+                <a
+                  href="pages/pricing.html"
+                  class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks"
+                  >Pricing & FAQ's</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Therapies MenuMD -->
+          <div
+            class="w-100 d-none opacity-0 NavSubMenuMDSize TherapySubMenunew longTransition"
+          >
+            <ul
+              class="d-flex flex-wrap justify-content-evenly w-100 h-100 align-content-start fw-bolder list-unstyled position-absolute longTransition"
+            >
+              <li
+                class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect therapySubMenu"
+              >
+                <a
+                  href="pages/experience.html"
+                  class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks"
+                  >EMDR</a
+                >
+              </li>
+              <li
+                class="w-46 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect therapySubMenu"
+              >
+                <a
+                  href="pages/benefitsretreat.html"
+                  class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks"
+                  >Breathwork</a
+                >
+              </li>
+              <li
+                class="w-50 h-25 d-flex justify-content-center align-items-start pt-5 hiddenScrollEffect therapySubMenu"
+              >
+                <a
+                  href="pages/pricing.html"
+                  class="d-flex justify-content-center align-items-center text-white fs-3 py-1 pe-3 text-center text-decoration-none generalTransition generalffsanserif SubMenuMDLinks"
+                  >Trauma</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Menu for xs sm md -->
+          <div
+            class="h-100 w-100 overflow-hidden d-md-none longTransition submenu subMenuPositionsm backDropFilterImg longTransition closeSubMenu"
+          >
+            <!-- Main SubMenu Xs -->
+            <div class="h-100 float-end w-90 specialBackGroundColorGreen">
+              <i
+                class="bi bi-x-lg px-2 text-white text-center fw-bolder menu-size specialColorOrange generalTransition closeMenu pointer"
+                title="Close"
+              ></i>
+              <div
+                class="d-flex justify-content-center align-items-center mt-4 mb-5"
+              >
+                <img src="" alt="" />
+                <span class="text-center text-white fw-bolder fs-5 fsSerif"
+                  >Anima Sana</span
+                >
+              </div>
+              <ul
+                class="d-flex flex-column align-items-center h-100 list-unstyled"
+              >
+                <!-- Retreat Sub Menu -->
+                <li class="w-100 mx-auto motherRetreatSubMenu mt-3">
+                  <a
+                    class="text-decoration-none w-100 text-center d-inline-block position-relative text-white designSubMenuA MenudesignHover generalTransition pointer p-2 py-3 mb-2 navigationff"
+                    >Retreat & Heal
                     <i
-                        class="bi bi-chevron-left sliderSMIconSize sliderMDIconSize generalTransition ps-1 sliderPrevious pointer"></i>
+                      class="bi bi-chevron-down fs-6 ps-2 retreatMenuChevron"
+                    ></i>
+                  </a>
+                  <ul
+                    class="d-flex flex-column justify-content-start align-items-start fw-bolder w-100 h-0 overflow-hidden retreatSubMenuXS longTransition list-unstyled"
+                  >
+                    <li class="w-100 bg-dark">
+                      <a
+                        href="pages/experience.html"
+                        class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif"
+                        >What does this experience entail?</a
+                      >
+                    </li>
+                    <li class="w-100 bg-dark">
+                      <a
+                        href="pages/benefitsretreat.html"
+                        class="d-inline-block py-3 w-100 text-center text-black text-decoration-none border-bottom border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif"
+                        >What are the benefits of an intensive retreat?</a
+                      >
+                    </li>
+                    <li class="w-100 bg-dark">
+                      <a
+                        href="pages/accomplish.html"
+                        class="d-inline-block py-3 w-100 text-black text-center text-decoration-none border-bottom border-secondary generalTransition submenuColorA MenudesignHover generalffsanserif"
+                        >What can I expect to accomplish?</a
+                      >
+                    </li>
+                    <li class="w-100 bg-dark">
+                      <a
+                        href="pages/ourhelp.html"
+                        class="d-inline-block py-3 w-100 text-center text-decoration-none border-bottom border-secondary text-black generalTransition submenuColorA MenudesignHover generalffsanserif"
+                        >What we help with?</a
+                      >
+                    </li>
+                    <li class="w-100 bg-dark">
+                      <a
+                        href="pages/pricing.html"
+                        class="d-inline-block py-3 w-100 text-center text-black text-decoration-none generalTransition submenuColorA MenudesignHover generalffsanserif"
+                        >Pricing & FAQ's</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
+                <!-- Therapy Sub menu -->
+                <li class="w-100 mx-auto motherTherapySubMenu">
+                  <a
+                    class="text-decoration-none w-100 text-center d-inline-block position-relative text-white designSubMenuA MenudesignHover generalTransition pointer p-2 py-3 mb-2 navigationff"
+                    >Therapies
                     <i
-                        class="bi bi-chevron-right sliderSMIconSize sliderMDIconSize generalTransition ps-1 sliderNext pointer"></i>
-                </div>
-                <div
-                    class="position-absolute d-none d-md-flex align-items-md-center justify-content-md-between sliderNav">
-                    <div class="rounded-circle me-2 generalTransition sliderNavItem"></div>
-                    <div class="rounded-circle me-2 generalTransition sliderNavItem"></div>
-                    <div class="rounded-circle me-2 generalTransition sliderNavItem"></div>
-                    <div class="rounded-circle me-2 generalTransition sliderNavItem"></div>
-                    <div class="rounded-circle me-2 generalTransition sliderNavItem"></div>
-                </div>
+                      class="bi bi-chevron-down fs-6 ps-2 therapyMenuChevron"
+                    ></i
+                  ></a>
+                  <ul
+                    class="d-flex flex-column justify-content-start align-items-start fw-bolder w-100 h-0 overflow-hidden longTransition list-unstyled therapySubMenuxs"
+                  >
+                    <li class="w-100 bg-dark">
+                      <a
+                        href="pages/emdr.html"
+                        class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif"
+                        >EMDR</a
+                      >
+                    </li>
+                    <li class="w-100 bg-dark">
+                      <a
+                        href="pages/breathwork.html"
+                        class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif"
+                        >Breathwork</a
+                      >
+                    </li>
+                    <li class="w-100 bg-dark">
+                      <a
+                        href="pages/trauma.html"
+                        class="d-inline-block py-3 w-100 text-center border-bottom text-decoration-none border-secondary submenuColorA generalTransition MenudesignHover generalffsanserif"
+                        >Trauma</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
+                <li class="w-100 mx-auto">
+                  <a
+                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 py-3 position-relative designSubMenuA MenudesignHover generalTransition navigationff"
+                    href="pages/aboutus.html"
+                    >About us</a
+                  >
+                </li>
+                <li><i class="bi bi-dash-lg text-white fs-5"></i></li>
+                <li class="w-100 mx-auto">
+                  <a
+                    class="d-inline-block w-100 text-center text-decoration-none text-white p-2 py-3 position-relative MenudesignHover generalTransition designSubMenuA navigationff"
+                    href="pages/contactus.html"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-        <!-- Part Seven -->
-        <div class="row height-100 partSevenBackGround">
-            <div
-                class="col-12 d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between w-100 h-100 px-0 bg-dark bg-opacity-25 opacity-md-none">
-                <div
-                    class="d-flex flex-column justify-content-evenly align-items-center w-85 h-75 rounded-2 bg-white hiddenScrollEffect">
-                    <span class="fst-italic fs-5 fsSerif">About</span>
-                    <h3 class="fsSerif fw-bolder text-center">Amelia Simpson</h3>
-                    <p class="px-3 fw-light generalffsanserif">Amelia Simpson, BSc, MSc, PgD, is the founder of Amina
-                        Sana and is
-                        a Consultant Psychologist
-                        working in the UAE. Amelia is UK trained and Registered Psychologist with the HCPC (in the
-                        UK), CDA (in the UAE) and a Europe Certified EMDR therapist, registered with EMDR Europe and
-                        EMDRIA. </p>
-                    <a href="pages/contactus.html"
-                        class="text-decoration-none px-2 py-3 border fw-bold position-relative d-flex justify-content-center align-items-center overflow-hidden text-capitalize designButton generalTransition">
-                        <span class="w-100 h-100 position-relative text-center z-2">Contact Us <i
-                                class="bi bi-chevron-right generalTransition"></i>
-                        </span>
-                    </a>
-                </div>
-                <div
-                    class="d-none d-md-flex flex-md-column align-items-md-center justify-content-md-center w-50 h-100 partSevenImage rounded-start-pill">
-                </div>
-            </div>
+      </div>
+      <!-- Button for come first again -->
+      <div class="row d-flex justify-content-md-end align-items-md-center">
+        <div
+          class="col-12 d-flex flex-column justify-content-center align-items-center p-0 position-fixed rounded-pill opacity-0 startAgain longTransition"
+        >
+          <a
+            href="#firstPart"
+            class="w-100 h-100 d-block d-flex flex-column justify-content-center align-items-center fs-3 text-white fw-bolder rounded-pill"
+            ><i class="bi bi-chevron-up"></i
+          ></a>
         </div>
-        <!-- Part Nine -->
-        <div class="row height-100">
-            <div class="col-12 w-100 h-100 d-flex justify-content-center align-content-center"><span
-                    class="w-100 h-100 text-center test55">Forum</span></div>
+      </div>
+      <!-- Part one -->
+      <div
+        class="row d-flex flex-column justify-content-md-center align-items-center height-100 partoneBackGroundMother"
+        id="firstPart"
+      >
+        <div class="w-100 NavMdSize d-none d-md-block"></div>
+        <div
+          class="col-12 col-md-11 d-flex flex-column justify-content-center align-items-center p-0 partoneBackGround designPartoneTextMD designPartoneTextXS user-select-none"
+        >
+          <div
+            class="w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-50"
+          >
+            <h3 class="fw-light fsPartOneSmall text-light fsSerif">
+              welcome !
+            </h3>
+            <h1 class="fw-bolder fsPartOneBig text-light fsSerif">
+              Anima Sana
+            </h1>
+            <h6 class="fw-light fsPartOneSmall text-light fsSerif">In</h6>
+            <h6 class="fw-bolder fsPartOneBig text-light fsSerif">Dubai</h6>
+          </div>
         </div>
-        <!-- Footer -->
-        <div class="row bg-dark">
-            <div
-                class="col-12 col-md-4 d-flex flex-column justify-content-evenly mb-4 mt-5 footerMargin justify-content-md-start align-items-md-center footerHMarginTop">
-                <h2 class="specialColorBlue text-capitalize mb-3 fsSerif footerMargin">retreat & heal</h2>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
-                    href="pages/experience.html">What does this experience entail?</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
-                    href="pages/benefitsretreat.html">What are the benefits of an intensive retreat?</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
-                    href="pages/accomplish.html">What can I expect to accomplish?</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
-                    href="pages/ourhelp.html">What we help with?</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
-                    href="pages/pricing.html">Pricing & FAQ's</a>
-            </div>
-            <div
-                class="col-12 col-md-4 d-flex flex-column justify-content-evenly justify-content-md-start align-items-md-center mb-4 footerMargin footerHMarginTop">
-                <h2 class="specialColorBlue text-capitalize mb-3 fsSerif footerMargin">therapies</h2>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop"
-                    href="pages/emdr.html">EMDR</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop"
-                    href="pages/breathwork.html">Breathwork</a>
-                <a class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop"
-                    href="pages/trauma.html">Trauma</a>
-            </div>
-            <div
-                class="col-12 col-md-4 d-flex flex-column justify-content-evenly mb-5 footerMargin align-items-md-center justify-content-md-start footerHMarginTop">
-                <a href="pages/contactus.html"
-                    class="specialColorBlue text-capitalize w-fitContent h2 text-decoration-none fsSerif footerMargin">contact
-                    us</a>
-                <span class="text-white specialColorOrange generalTransition footerAMarginTop">Example@gmail.com</span>
-            </div>
-            <div class="col-12 d-flex flex-column justify-content-evenly align-items-center mt-3 footerMotherMarginTop">
-                <img src="images/animaSanaLogo.png" class="d-block mb-4 footerLogoSize" alt="">
-                <p class="text-white-50 generalffsanserif h6 mb-3">© 2023 | Anima Sana, All Right Reserved</p>
-                <p></p>
-            </div>
+        <div
+          class="col-12 d-flex justify-content-center align-items-center p-0 h-10 designPartoneArrowXS"
+          id="aboutUS"
+        >
+          <a
+            href="#aboutUS"
+            class="text-decoration-none d-flex align-items-center justify-content-center text-white text-center w-5 h-100 fs-1 generalffsanserif"
+            ><i
+              class="bi bi-chevron-down hoverArrowDown generalTransition animationArrowDown"
+            ></i
+          ></a>
         </div>
+      </div>
+      <!-- Part two -->
+      <div class="row height-100 partTwoBackGround mamad">
+        <div
+          class="col-12 d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between w-100 h-100 px-0 bg-dark bg-opacity-25 opacity-md-none"
+        >
+          <div
+            class="d-flex flex-column justify-content-evenly align-items-center w-85 h-75 rounded-2 bg-white hiddenScrollEffect"
+          >
+            <h3 class="fsSerif fw-bolder text-center">Anima Sana</h3>
+            <p class="px-3 fw-light generalffsanserif">
+              Amelia Simpson, BSc, MSc, PgD, is the founder of Amina Sana and is
+              a Consultant Psychologist working in the UAE. Amelia is UK trained
+              and Registered Psychologist with the HCPC (in the UK), CDA (in the
+              UAE) and a Europe Certified EMDR therapist, registered with EMDR
+              Europe and EMDRIA.
+            </p>
+            <a
+              href="pages/contactus.html"
+              class="text-decoration-none px-2 py-3 border fw-bold position-relative d-flex justify-content-center align-items-center overflow-hidden text-capitalize designButton generalTransition"
+            >
+              <span class="w-100 h-100 position-relative text-center z-2"
+                >More about Anima Sana
+                <i class="bi bi-chevron-right generalTransition"></i>
+              </span>
+            </a>
+          </div>
+          <div
+            class="d-none d-md-flex flex-md-column align-items-md-center justify-content-md-center w-50 h-100 partTwoMDImage rounded-start-pill"
+          ></div>
+        </div>
+      </div>
+      <!-- Part Three -->
+      <div
+        class="row d-flex flex-column justify-content-evenly align-items-center d-md-flex flex-md-row flex-md-wrap justify-content-md-around align-content-md-center pb-4 specialBackGroundColorBlue"
+      >
+        <div
+          class="col-12 d-flex justify-content-center align-items-center text-center mt-5"
+        >
+          <h2 class="text-white fw-bolder mt-4 fsSerif">Therapies</h2>
+        </div>
+        <div
+          class="col-10 col-sm-8 col-md-4 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center hiddenScrollEffect"
+        >
+          <div
+            class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree"
+          >
+            <img
+              class="d-inline-block w-100 designImagePartThree generalTransition"
+              src="images/partThree1.jpg"
+              alt=""
+            />
+            <a
+              href="#"
+              class="position-absolute h6 w-100 h-100 z-1 d-flex justify-content-center align-items-center text-white mb-0 fw-bolder text-decoration-none fsSerif designHPartThree generalTransition"
+              ><span class="designHPartThreehover generalTransition"
+                >Lorem ipsum dolor sit</span
+              ></a
+            >
+          </div>
+          <p class="my-3 px-3 generalffsanserif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            alias officia ea eum! Deleniti tempora nulla nesciunt porro
+            voluptates dolorem velit ab voluptate optio sapiente.
+          </p>
+          <a
+            href="#"
+            class="text-decoration-none bg-white fw-bold text-capitalize rounded-pill mb-4 p-2 orangeColorBTN"
+            >More about anima sana
+            <i
+              class="bi bi-chevron-right orangeColorBTNChevron generalTransition"
+            ></i>
+          </a>
+        </div>
+        <div
+          class="col-10 col-sm-8 col-md-4 offset-md-1 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center hiddenScrollEffect"
+        >
+          <div
+            class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree"
+          >
+            <img
+              class="d-inline-block w-100 designImagePartThree generalTransition"
+              src="images/partThree2.jpg"
+              alt=""
+            />
+            <a
+              href="#"
+              class="position-absolute h6 w-100 h-100 z-1 d-flex justify-content-center align-items-center text-white mb-0 fw-bolder text-decoration-none fsSerif designHPartThree generalTransition"
+              ><span class="designHPartThreehover generalTransition"
+                >Lorem ipsum dolor sit</span
+              ></a
+            >
+          </div>
+          <p class="my-3 px-3 generalffsanserif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            alias officia ea eum! Deleniti tempora nulla nesciunt porro
+            voluptates dolorem velit ab voluptate optio sapiente.
+          </p>
+          <a
+            href="#"
+            class="text-decoration-none bg-white fw-bold text-capitalize rounded-pill mb-4 p-2 orangeColorBTN"
+            >More about anima sana
+            <i
+              class="bi bi-chevron-right orangeColorBTNChevron generalTransition"
+            ></i>
+          </a>
+        </div>
+        <div
+          class="col-10 col-sm-8 col-md-4 bg-white rounded-4 px-0 mt-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center marginPartThreeBottom hiddenScrollEffect"
+        >
+          <div
+            class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree"
+          >
+            <img
+              class="d-inline-block w-100 designImagePartThree generalTransition"
+              src="images/partThree3.jpg"
+              alt=""
+            />
+            <a
+              href="#"
+              class="position-absolute h6 w-100 h-100 z-1 d-flex justify-content-center align-items-center text-white mb-0 fw-bolder text-decoration-none fsSerif designHPartThree generalTransition"
+              ><span class="designHPartThreehover generalTransition"
+                >Lorem ipsum dolor sit</span
+              ></a
+            >
+          </div>
+          <p class="my-3 px-3 generalffsanserif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            alias officia ea eum! Deleniti tempora nulla nesciunt porro
+            voluptates dolorem velit ab voluptate optio sapiente.
+          </p>
+          <a
+            href="#"
+            class="text-decoration-none bg-white fw-bold text-capitalize rounded-pill mb-4 p-2 orangeColorBTN"
+            >More about anima sana
+            <i
+              class="bi bi-chevron-right orangeColorBTNChevron generalTransition"
+            ></i>
+          </a>
+        </div>
+        <div
+          class="col-10 col-sm-8 col-md-4 offset-md-1 bg-white rounded-4 px-0 mt-5 mb-5 overflow-hidden d-flex flex-column justify-content-evenly align-items-center marginPartThreeBottom hiddenScrollEffect"
+        >
+          <div
+            class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden pointer designHMotherPartThree"
+          >
+            <img
+              class="d-inline-block w-100 designImagePartThree generalTransition"
+              src="images/partThree4.jpg"
+              alt=""
+            />
+            <a
+              href="#"
+              class="position-absolute h6 w-100 h-100 z-1 d-flex justify-content-center align-items-center text-white mb-0 fw-bolder text-decoration-none fsSerif designHPartThree generalTransition"
+              ><span class="designHPartThreehover generalTransition"
+                >Lorem ipsum dolor sit</span
+              ></a
+            >
+          </div>
+          <p class="my-3 px-3 generalffsanserif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            alias officia ea eum! Deleniti tempora nulla nesciunt porro
+            voluptates dolorem velit ab voluptate optio sapiente.
+          </p>
+          <a
+            href="#"
+            class="text-decoration-none bg-white fw-bold text-capitalize rounded-pill mb-4 p-2 orangeColorBTN"
+            >More about anima sana
+            <i
+              class="bi bi-chevron-right orangeColorBTNChevron generalTransition"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <!-- Part Four -->
+      <div class="row">
+        <div
+          class="col-12 d-flex flex-column justify-content-between align-items-center height-100 backGroundColorMilky"
+        >
+          <div
+            class="d-flex flex-column justify-content-between align-items-center mt-5 w-100"
+          >
+            <h1 class="fsSerif fw-bolder mb-4">Anima Sana</h1>
+            <p class="fs-4 fw-light text-center generalffsanserif">
+              We are here to help you see a different side of life
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-between align-items-center d-md-flex flex-md-row justify-content-md-around align-items-md-center w-100 border border-dark border-start-0 border-end-0 h-50 motherCounterUp"
+          >
+            <div
+              class="d-flex flex-column justify-content-between align-items-center text-center margin-top"
+            >
+              <span class="fs-5 fw-bolder fsSerif">experience</span>
+              <span class="fs-5 text-capitalize fw-light generalffsanserif"
+                ><span class="textCounterUp" data-max="12">0</span> years</span
+              >
+            </div>
+            <div
+              class="d-flex flex-column justify-content-between align-items-center text-center"
+            >
+              <span class="fs-5 fw-bolder fsSerif">client</span>
+              <span
+                class="fs-5 text-capitalize fw-light generalffsanserif textCounterUp"
+                data-max="1253"
+                >0</span
+              >
+            </div>
+            <div
+              class="d-flex flex-column justify-content-between align-items-center text-center"
+            >
+              <span class="fs-5 fw-bolder fsSerif"
+                >Satisfaction percentage</span
+              >
+              <span class="fs-5 text-capitalize fw-light generalffsanserif"
+                ><span class="textCounterUp" data-max="97">0</span>%</span
+              >
+            </div>
+            <div
+              class="d-flex flex-column justify-content-between align-items-center text-center margin-bottom"
+            >
+              <span class="fs-5 fw-bolder fsSerif">our package period</span>
+              <span class="fs-5 text-capitalize fw-light generalffsanserif"
+                ><span class="textCounterUp" data-max="4">0</span> weeks</span
+              >
+            </div>
+          </div>
+          <a
+            href="pages/contactus.html"
+            class="text-decoration-none mb-5 px-2 py-3 border fw-bold position-relative d-flex justify-content-center align-items-center overflow-hidden text-capitalize designButton generalTransition"
+          >
+            <span class="w-100 h-100 position-relative z-2"
+              >Contact Us <i class="bi bi-chevron-right generalTransition"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- Part Five -->
+      <div
+        class="row d-flex justify-content-center align-items-center justify-content-md-end partFourBackGround height-100"
+      >
+        <div
+          class="col-10 col-md-6 px-3 d-flex flex-column justify-content-around align-items-center rounded-2 h-80 bg-white margin-start hiddenScrollEffect"
+        >
+          <h3 class="text-center fw-bolder fsSerif">Treatment package</h3>
+          <p class="generalffsanserif">
+            Our intensive therapy retreats are based on the most current
+            scientific understanding of adult mental health and how we are
+            affected by trauma. Our counseling and mental health services
+            utilize the most effective methods to help you process your trauma
+            and move forward in life, unencumbered by negative past experiences.
+          </p>
+          <a
+            href="pages/contactus.html"
+            class="text-decoration-none px-2 py-3 border fw-bold position-relative d-flex justify-content-center align-items-center overflow-hidden text-capitalize designButton generalTransition"
+          >
+            <span class="w-100 h-100 position-relative text-center z-2"
+              >Contact Us <i class="bi bi-chevron-right generalTransition"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- How We can Help -->
+      <div class="row partEightMotherSize backGroundColorMilky">
+        <div class="col-12">
+          <h5 class="w-100 text-center fw-bold fsSerif my-5">
+            How Anima Sana can help me?
+          </h5>
+          <div
+            class="d-md-flex flex-md-row justify-content-md-evenly align-items-md-center"
+          >
+            <div
+              class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect"
+            >
+              <img
+                src="images/Communication.png"
+                class="test d-block mb-3"
+                alt=""
+              />
+              <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2"
+                >Better Communication</span
+              >
+              <p class="text-center generalffsanserif fs-5 fw-light">
+                Learn skills to understand your feelings and share them with
+                others.
+              </p>
+            </div>
+            <div
+              class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect"
+            >
+              <img src="images/progress.png" class="test d-block mb-3" alt="" />
+              <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2"
+                >Renewed Clarity</span
+              >
+              <p class="text-center generalffsanserif fs-5 fw-light">
+                Gain a stronger sense of purpose and direction in your life.
+              </p>
+            </div>
+            <div
+              class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect"
+            >
+              <img src="images/happines.png" class="test d-block mb-3" alt="" />
+              <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2"
+                >Unburden Yourself</span
+              >
+              <p class="text-center generalffsanserif fs-5 fw-light">
+                Heal your unprocessed trauma and put it to rest once and for
+                all.
+              </p>
+            </div>
+          </div>
+          <div
+            class="d-md-flex flex-md-row justify-content-md-evenly align-items-md-center"
+          >
+            <div
+              class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect"
+            >
+              <img
+                src="images/Communication.png"
+                class="test d-block mb-3"
+                alt=""
+              />
+              <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2"
+                >Better Communication</span
+              >
+              <p class="text-center generalffsanserif fs-5 fw-light">
+                Learn skills to understand your feelings and share them with
+                others.
+              </p>
+            </div>
+            <div
+              class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect"
+            >
+              <img
+                src="images/Communication.png"
+                class="test d-block mb-3"
+                alt=""
+              />
+              <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2"
+                >Better Communication</span
+              >
+              <p class="text-center generalffsanserif fs-5 fw-light">
+                Learn skills to understand your feelings and share them with
+                others.
+              </p>
+            </div>
+            <div
+              class="d-flex flex-column align-items-center justify-content-between w-100 partEightMDItem partEightSMItem hiddenScrollEffect"
+            >
+              <img
+                src="images/Communication.png"
+                class="test d-block mb-3"
+                alt=""
+              />
+              <span class="fs-6 fsSerif fsColorOrange fw-bolder mb-2"
+                >Better Communication</span
+              >
+              <p class="text-center generalffsanserif fs-5 fw-light">
+                Learn skills to understand your feelings and share them with
+                others.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider -->
+      <div class="row height-100">
+        <div
+          class="col-12 w-100 h-100 overflow-hidden px-0 sliderContainers sliderBackgroundImage position-relative"
+        >
+          <div
+            class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition firstSliderItem"
+          >
+            <div class="w-100 h-100 d-flex sliderItemsMDBackground">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD"
+              >
+                <p class="generalffsanserif fw-light fs-5">
+                  “Life damages us – everyone – we cannot escape that damage –
+                  but now I am also learning this… that we can be mended... we
+                  mend each other”
+                </p>
+                <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition"
+          >
+            <div class="w-100 h-100 d-flex sliderItemsMDBackground">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD"
+              >
+                <p class="generalffsanserif fw-light fs-5">
+                  “Life damages us – everyone – we cannot escape that damage –
+                  but now I am also learning this… that we can be mended... we
+                  mend each other”
+                </p>
+                <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition"
+          >
+            <div class="w-100 h-100 d-flex sliderItemsMDBackground">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD"
+              >
+                <p class="generalffsanserif fw-light fs-5">
+                  “Life damages us – everyone – we cannot escape that damage –
+                  but now I am also learning this… that we can be mended... we
+                  mend each other”
+                </p>
+                <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition"
+          >
+            <div class="w-100 h-100 d-flex sliderItemsMDBackground">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD"
+              >
+                <p class="generalffsanserif fw-light fs-5">
+                  “Life damages us – everyone – we cannot escape that damage –
+                  but now I am also learning this… that we can be mended... we
+                  mend each other”
+                </p>
+                <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-inline-block h-100 w-100 sliderItems sliderItemsSMBackground longTransition"
+          >
+            <div class="w-100 h-100 d-flex sliderItemsMDBackground">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center sliderItemTextSM sliderItemTextMD"
+              >
+                <p class="generalffsanserif fw-light fs-5">
+                  “Life damages us – everyone – we cannot escape that damage –
+                  but now I am also learning this… that we can be mended... we
+                  mend each other”
+                </p>
+                <p class="fsSerif fw-bolder">(Veronica Ross, Allegiant)</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-100 position-absolute sliderIcon d-flex align-items-center justify-content-between text-white"
+          >
+            <i
+              class="bi bi-chevron-left sliderSMIconSize sliderMDIconSize generalTransition ps-1 sliderPrevious pointer"
+            ></i>
+            <i
+              class="bi bi-chevron-right sliderSMIconSize sliderMDIconSize generalTransition ps-1 sliderNext pointer"
+            ></i>
+          </div>
+          <div
+            class="position-absolute d-none d-md-flex align-items-md-center justify-content-md-between sliderNav"
+          >
+            <div
+              class="rounded-circle me-2 generalTransition sliderNavItem"
+            ></div>
+            <div
+              class="rounded-circle me-2 generalTransition sliderNavItem"
+            ></div>
+            <div
+              class="rounded-circle me-2 generalTransition sliderNavItem"
+            ></div>
+            <div
+              class="rounded-circle me-2 generalTransition sliderNavItem"
+            ></div>
+            <div
+              class="rounded-circle me-2 generalTransition sliderNavItem"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- Part Seven -->
+      <div class="row height-100 partSevenBackGround">
+        <div
+          class="col-12 d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between w-100 h-100 px-0 bg-dark bg-opacity-25 opacity-md-none"
+        >
+          <div
+            class="d-flex flex-column justify-content-evenly align-items-center w-85 h-75 rounded-2 bg-white hiddenScrollEffect"
+          >
+            <span class="fst-italic fs-5 fsSerif">About</span>
+            <h3 class="fsSerif fw-bolder text-center">Amelia Simpson</h3>
+            <p class="px-3 fw-light generalffsanserif">
+              Amelia Simpson, BSc, MSc, PgD, is the founder of Amina Sana and is
+              a Consultant Psychologist working in the UAE. Amelia is UK trained
+              and Registered Psychologist with the HCPC (in the UK), CDA (in the
+              UAE) and a Europe Certified EMDR therapist, registered with EMDR
+              Europe and EMDRIA.
+            </p>
+            <a
+              href="pages/contactus.html"
+              class="text-decoration-none px-2 py-3 border fw-bold position-relative d-flex justify-content-center align-items-center overflow-hidden text-capitalize designButton generalTransition"
+            >
+              <span class="w-100 h-100 position-relative text-center z-2"
+                >Contact Us
+                <i class="bi bi-chevron-right generalTransition"></i>
+              </span>
+            </a>
+          </div>
+          <div
+            class="d-none d-md-flex flex-md-column align-items-md-center justify-content-md-center w-50 h-100 partSevenImage rounded-start-pill"
+          ></div>
+        </div>
+      </div>
+      <!-- Part Nine -->
+      <div class="row height-100">
+        <div
+          class="col-12 w-100 h-100 d-flex justify-content-center align-content-center"
+        >
+          <span class="w-100 h-100 text-center test55">Forum</span>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="row bg-dark">
+        <div
+          class="col-12 col-md-4 d-flex flex-column justify-content-evenly mb-4 mt-5 footerMargin justify-content-md-start align-items-md-center footerHMarginTop"
+        >
+          <h2
+            class="specialColorBlue text-capitalize mb-3 fsSerif footerMargin"
+          >
+            retreat & heal
+          </h2>
+          <a
+            class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+            href="pages/experience.html"
+            >What does this experience entail?</a
+          >
+          <a
+            class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+            href="pages/benefitsretreat.html"
+            >What are the benefits of an intensive retreat?</a
+          >
+          <a
+            class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+            href="pages/accomplish.html"
+            >What can I expect to accomplish?</a
+          >
+          <a
+            class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+            href="pages/ourhelp.html"
+            >What we help with?</a
+          >
+          <a
+            class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerItemCenter footerAMarginTop"
+            href="pages/pricing.html"
+            >Pricing & FAQ's</a
+          >
+        </div>
+        <div
+          class="col-12 col-md-4 d-flex flex-column justify-content-evenly justify-content-md-start align-items-md-center mb-4 footerMargin footerHMarginTop"
+        >
+          <h2
+            class="specialColorBlue text-capitalize mb-3 fsSerif footerMargin"
+          >
+            therapies
+          </h2>
+          <a
+            class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop"
+            href="pages/emdr.html"
+            >EMDR</a
+          >
+          <a
+            class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop"
+            href="pages/breathwork.html"
+            >Breathwork</a
+          >
+          <a
+            class="text-decoration-none text-white w-fitContent mb-3 specialColorOrange generalTransition footerMargin footerAMarginTop"
+            href="pages/trauma.html"
+            >Trauma</a
+          >
+        </div>
+        <div
+          class="col-12 col-md-4 d-flex flex-column justify-content-evenly mb-5 footerMargin align-items-md-center justify-content-md-start footerHMarginTop"
+        >
+          <a
+            href="pages/contactus.html"
+            class="specialColorBlue text-capitalize w-fitContent h2 text-decoration-none fsSerif footerMargin"
+            >contact us</a
+          >
+          <span
+            class="text-white specialColorOrange generalTransition footerAMarginTop"
+            >Example@gmail.com</span
+          >
+        </div>
+        <div
+          class="col-12 d-flex flex-column justify-content-evenly align-items-center mt-3 footerMotherMarginTop"
+        >
+          <img
+            src="images/animaSanaLogo.png"
+            class="d-block mb-4 footerLogoSize"
+            alt=""
+          />
+          <p class="text-white-50 generalffsanserif h6 mb-3">
+            © 2023 | Anima Sana, All Right Reserved
+          </p>
+          <p></p>
+        </div>
+      </div>
     </div>
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>
